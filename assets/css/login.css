@@ -1,0 +1,197 @@
+body, html {
+    background-color: #132029;
+    height: 100%;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'kanit-regular';
+    src: url('../fonts/Kanit/Kanit-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
+}
+
+.login-photo {
+    width: 1200px;
+    height: 780px;
+    margin-left: -10px;
+    overflow: hidden;
+}
+
+.codeflix-title {
+    width: 211px;
+    height: 33px;
+    margin-left: -50px;
+    margin-top: 94px;
+}
+
+.codeflix-sign-in {
+    color: #fff;
+    font-weight: 600;
+    font-size: 42px;
+    margin-top: 3rem;
+    margin-left: -10px;
+    font-family: "Kanit", sans-serif;
+}
+
+.form {
+    margin-left: -200px;
+}
+
+.form-label-email {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.form-email {
+    width: 493px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.form-email:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.form-label-password {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.form-password {
+    width: 493px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.form-password:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.label-check {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.forgot-password {
+    margin-left: 15.5rem;
+    text-decoration: none;
+    color: #1ABC9C;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn-sign-in {
+    width: 490px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #1ABC9C;
+    border-color: #1ABC9C;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.btn-sign-in:hover{
+    background-color: transparent;
+    border-color: #1ABC9C;
+}
+
+
+.btn-sign-google {
+    width: 490px;
+    height: auto;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.btn-sign-google:hover{
+    background-color: #1ABC9C;
+    border-color: #1ABC9C;
+}
+
+.register {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-left: -150px;
+}
+
+.small{
+    margin-left: 0.2rem;
+    text-decoration: none;
+    font-size: 16px;
+    color: #1ABC9C;
+}
+
+@media (max-width: 767px) {
+    .login-photo {
+        display: none;
+    }
+
+    .codeflix-title {
+        margin-top: 7rem;
+        width: 250px;
+        height: auto;
+        margin-left: -110px;
+        display: block;
+    }
+
+    .codeflix-sign-in {
+        font-size: 30px;
+        margin-left: -40px;
+    }
+
+    .form {
+        margin-left: -220px;
+    }
+
+    .form-label-email, .form-label-password {
+        font-size: 16px;
+    }
+
+    .form-email, .form-password {
+        width: 100%;
+    }
+
+    .btn-sign-in, .btn-sign-google {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .forgot-password {
+        display: block;
+        margin-left: 290px;
+        margin-top: -20px;
+    }
+
+    .register {
+        margin-left: 10px;
+        margin-top: 5rem;
+    }
+}
+
