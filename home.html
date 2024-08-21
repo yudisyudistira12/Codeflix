@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codeflix</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome-free/all.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css">
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="navbar-icon" src="assets/img/codeflix logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown kategori-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  KATEGORI
+                </a>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Anime</a></li>
+                    <li><a class="dropdown-item" href="#">Classic</a></li>
+                    <li><a class="dropdown-item" href="#">Comedies</a></li>
+                    <li><a class="dropdown-item" href="#">Crime</a></li>
+                    <li><a class="dropdown-item" href="#">Documenteries</a></li>
+                    <li><a class="dropdown-item" href="#">Drama</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                    <li><a class="dropdown-item" href="#">Hollywood</a></li>
+                    <li><a class="dropdown-item" href="#">Horror</a></li>
+                    <li><a class="dropdown-item" href="#">Independent</a></li>
+                    <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                    <li><a class="dropdown-item" href="#">Kids & Family</a></li>
+                    <li><a class="dropdown-item" href="#">Korean</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="dropdown-item" href="#">Musicals</a></li>
+                    <li><a class="dropdown-item" href="#">Romance</a></li>
+                    <li><a class="dropdown-item" href="#">Sci-fi</a></li>
+                    <li><a class="dropdown-item" href="#">Shorts</a></li>
+                    <li><a class="dropdown-item" href="#">Sports</a></li>
+                    <li><a class="dropdown-item" href="#">Stand-up Comedy</a></li>
+                    <li><a class="dropdown-item" href="#">Thriller</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex" role="search">
+            <input class="form-control search-box" type="search" placeholder="Cari Disini" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </form>
+          <li class="d-flex nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bell bell-icon"></i>
+            </a>
+            <ul class="dropdown-menu notification">
+              <li><a class="dropdown-item notification-item" href="#">Test</a></li>
+              <li><a class="dropdown-item notification-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item notification-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="d-flex nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user user-icon"></i>
+            </a>
+            <ul class="dropdown-menu user-info">
+              <li><a class="dropdown-item user-info-item" href="#"><i class="fa-solid fa-circle-user"></i> Profile Setting</a></li>
+              <li><a class="dropdown-item user-info-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+            </ul>
+          </li>
+        </div>
+    </nav>
+    <div class="jumbotron">
+      <h1 class="display-4 jumbotron-title">All New Simba</h1>
+      <img class="jumbotron-img" src="assets/img/Jumbotron-img.png" alt="">
+      <p class="lead">
+        Simba adalah anak sebatang kara yang sedang mencari orang tuanya
+        tetapi usaha nya terbatas. Mampukah simba menemukan orang tuanya ?
+      </p>
+      <a class="btn btn-primary btn-play btn-lg" href="#" role="button">Play</a>
+    </div>
+    <h3 class="new-added-title">New Added</h3>
+    <!-- <div id="carouselExample" class="carousel slide mt-4">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card">
+            <img src="assets/img/Trex.png" class="card-img-top" alt="...">
+            <span class="badge rounded-pill text-bg-dark badge-rating">
+              <img class="star-rating" src="assets/img/star-rating.png" alt="">
+              (8,3)
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="assets/img/Trex.png" class="card-img-top" alt="...">
+            <span class="badge rounded-pill text-bg-dark badge-rating">
+              <img class="star-rating" src="assets/img/star-rating.png" alt="">
+              (8,3)
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="assets/img/Trex.png" class="card-img-top" alt="...">
+            <span class="badge rounded-pill text-bg-dark badge-rating">
+              <img class="star-rating" src="assets/img/star-rating.png" alt="">
+              (8,3)
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="assets/img/Trex.png" class="card-img-top" alt="...">
+            <span class="badge rounded-pill text-bg-dark badge-rating">
+              <img class="star-rating" src="assets/img/star-rating.png" alt="">
+              (8,3)
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="assets/img/Trex.png" class="card-img-top" alt="...">
+            <span class="badge rounded-pill text-bg-dark badge-rating">
+              <img class="star-rating" src="assets/img/star-rating.png" alt="">
+              (8,3)
+            </span>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+    <footer>
+      <div class="col-md-12 col-lg-10 mt-2 text-white">
+          <p class="footer-title">&copy; <script>document.write(new Date().getFullYear());</script> CODEPOLITAN. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,378 @@
+body, html {
+    background-color: #132029;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'kanit-regular';
+    src: url('../fonts/Kanit/Kanit-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
+}
+
+.login-photo {
+    width: 1200px;
+    height: 780px;
+    margin-left: -10px;
+    overflow: hidden;
+}
+
+.codeflix-title {
+    width: 211px;
+    height: 33px;
+    margin-left: -50px;
+    margin-top: 94px;
+}
+
+.codeflix-sign-in {
+    color: #fff;
+    font-weight: 600;
+    font-size: 42px;
+    margin-top: 3rem;
+    margin-left: -10px;
+    font-family: "Kanit", sans-serif;
+}
+
+.form {
+    margin-left: -200px;
+}
+
+.form-label-email {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.form-email {
+    width: 493px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.form-email:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.form-label-password {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.form-password {
+    width: 493px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.form-password:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.label-check {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.forgot-password {
+    margin-left: 15.5rem;
+    text-decoration: none;
+    color: #1ABC9C;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn-sign-in {
+    width: 490px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #1ABC9C;
+    border-color: #1ABC9C;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.btn-sign-in:hover{
+    background-color: transparent;
+    border-color: #1ABC9C;
+}
+
+
+.btn-sign-google {
+    width: 490px;
+    height: auto;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.btn-sign-google:hover{
+    background-color: #1ABC9C;
+    border-color: #1ABC9C;
+}
+
+.register {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-left: -150px;
+}
+
+.small{
+    margin-left: 0.2rem;
+    text-decoration: none;
+    font-size: 16px;
+    color: #1ABC9C;
+}
+
+.bg-body-nav {
+    background-color: #142A36;
+}
+
+.navbar-icon {
+    width: 157px;
+    height: auto;
+    margin-left: 75px;
+}
+
+.navbar-nav .dropdown-toggle {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+.navbar-nav .dropdown-toggle:focus, 
+.navbar-nav .dropdown-toggle:hover {
+    color: #fff;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #132029;
+    border: 1px solid #1ABC9C;
+    border-radius: 20px;
+    width: 450px;
+}
+
+.kategori-dropdown .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.kategori-dropdown .dropdown-menu.show{
+    display: flex;
+}
+
+.navbar-nav .dropdown-item {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar-nav .dropdown-item:hover, 
+.navbar-nav .dropdown-item:focus {
+    color: #1ABC9C;
+    background-color: transparent;
+}
+
+.d-flex {
+    margin-left: 100px;
+}
+
+.search-box {
+    width: 403px;
+    height: auto;
+    border-radius: 50px;
+    background-color: #132029;
+    border: none;
+}
+
+.search-box:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.search-box::placeholder {
+    color: #455D6A;
+    opacity: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.search-icon {
+    margin-left: -50px;
+    margin-top: 0.6rem;
+    color: #fff;
+}
+
+.bell-icon {
+    color: #fff;
+    margin-left: -20px;
+    margin-top: 0.5rem;
+}
+
+.user-icon {
+    color: #fff;
+    margin-left: -70px;
+    margin-top: 0.5rem;
+}
+
+
+.dropdown-menu.notification {
+    background-color: #132029;
+    margin-left: -100px;
+    border: 1px solid #1ABC9C;
+}
+
+.dropdown-item.notification-item{
+    color: #1ABC9C;
+}
+
+.dropdown-item.notification-item:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+.dropdown-menu.user-info {
+    background-color: #132029;
+    margin-left: -170px;
+    border: 1px solid #1ABC9C;
+}
+
+.dropdown-item.user-info-item{
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.dropdown-item.user-info-item:hover{
+    background-color: transparent;
+    color: #1ABC9C;
+}
+
+
+
+.jumbotron {
+    width: 1555px;
+    height: 500px;
+    margin-left: 75px;
+    margin-top: 100px;
+    background: linear-gradient(to top, rgba(20, 42, 54, 1) 100%, rgba(20, 42, 54, 0) 0%);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden; /* Pastikan elemen lain tidak mempengaruhi layout */
+}
+
+
+
+.jumbotron-title {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    margin-left: 4rem;
+    margin-top: 8rem; /* Ubah nilai ini untuk menurunkan posisi */
+}
+
+.jumbotron-img {
+    width: 731px;
+    height: 500px;
+    float: right;
+    margin-top: -220px;
+}
+
+.lead {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: #fff;
+    width: 390px;
+    height: 105px;
+    margin-left: 60px;
+    margin-top: 2rem;
+}
+
+.btn-play {
+    width: 284px;
+    border-radius: 10px;
+    margin-left: 60px;
+    background-color: #1ABC9C;
+    border: 1px solid #1ABC9C;
+}
+
+.btn-play:hover{
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.new-added-title {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    margin-left: 155px;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+
+.card {
+    width: 205px;
+    height: 308px;
+    border-radius: 20px;
+    border: none;
+    margin: 0.5em;
+}
+
+.badge-rating {
+    width: 80px;
+    margin-top: -300px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 1rem;
+}
+
+.star-rating {
+    width: 15px;
+}
+
+footer{
+    background-color: #142A36;
+}
+
+.footer-title {
+    margin-left: 45rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
