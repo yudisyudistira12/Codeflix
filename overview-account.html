@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codeflix</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome-free/all.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="navbar-icon" src="assets/img/codeflix logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown kategori-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  KATEGORI
+                </a>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a class="dropdown-item" href="action.html">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Anime</a></li>
+                    <li><a class="dropdown-item" href="#">Classic</a></li>
+                    <li><a class="dropdown-item" href="#">Comedies</a></li>
+                    <li><a class="dropdown-item" href="#">Crime</a></li>
+                    <li><a class="dropdown-item" href="#">Documenteries</a></li>
+                    <li><a class="dropdown-item" href="#">Drama</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                    <li><a class="dropdown-item" href="#">Hollywood</a></li>
+                    <li><a class="dropdown-item" href="#">Horror</a></li>
+                    <li><a class="dropdown-item" href="#">Independent</a></li>
+                    <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                    <li><a class="dropdown-item" href="#">Kids & Family</a></li>
+                    <li><a class="dropdown-item" href="#">Korean</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="dropdown-item" href="#">Musicals</a></li>
+                    <li><a class="dropdown-item" href="#">Romance</a></li>
+                    <li><a class="dropdown-item" href="#">Sci-fi</a></li>
+                    <li><a class="dropdown-item" href="#">Shorts</a></li>
+                    <li><a class="dropdown-item" href="#">Sports</a></li>
+                    <li><a class="dropdown-item" href="#">Stand-up Comedy</a></li>
+                    <li><a class="dropdown-item" href="#">Thriller</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex" role="search">
+            <input class="form-control search-box" type="search" placeholder="Cari Disini" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </form>
+          <li class="d-flex nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bell bell-icon"></i>
+            </a>
+            <ul class="dropdown-menu notification">
+              <li>
+                <a class="dropdown-item notification-item" href="#">
+                  <img class="time-subscribe" src="assets/img/Clock.png" alt="">
+                  <div class="notification-content">
+                    <p class="multi-line-text-subscribe">Subscribe Premium<br>Telah Habis!</p>
+                    <span class="notification-date">Hari Ini</span>
+                  </div>
+                </a>
+              </li>                                         
+              <li>
+                <a class="dropdown-item notification-item" href="#">
+                  <img class="time-subscribe" src="assets/img/Kingkong.png" alt="">
+                  <div class="notification-content">
+                    <p class="multi-line-text-subscribe">Film Baru</p>
+                    <p class="multi-line-text-new-movie">Khong Guan Super</p>
+                    <span class="notification-date">1 Hari Yang Lalu</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item notification-item" href="#">
+                  <img class="time-subscribe" src="assets/img/Blackhat.png" alt="">
+                  <div class="notification-content">
+                    <p class="multi-line-text-subscribe">Film Baru</p>
+                    <p class="multi-line-text-new-movie">Black Hat</p>
+                    <span class="notification-date">2 Hari Yang Lalu</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item notification-item" href="#">
+                  <img class="time-subscribe" src="assets/img/Kingkong.png" alt="">
+                  <div class="notification-content">
+                    <p class="multi-line-text-subscribe">Film Baru</p>
+                    <p class="multi-line-text-new-movie">Laugh Tate</p>
+                    <span class="notification-date">2 Hari Yang Lalu</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="d-flex nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user user-icon"></i>
+            </a>
+            <ul class="dropdown-menu user-info">
+              <li><a class="dropdown-item user-info-item" href="overview-account.html"><i class="fa-solid fa-circle-user"></i> Profile Setting</a></li>
+              <li><a class="dropdown-item user-info-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+            </ul>
+          </li>
+        </div>
+    </nav>
+    <div class="container-info">
+        <div class="row">
+            <div class="col-md-6 sidebar-left">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a class="group-profile" href="#overview" onclick="showSection('overview')">Overview</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="group-profile" href="#membership" onclick="showSection('membership')">Membership</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="group-profile" href="#overview" onclick="showSection('overview')">Overview</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <section id="overview" class="content-section">
+                    <h4>Overview</h4>
+                </section>
+        
+                <section id="membership" class="content-section">
+                    <p style="color: aqua;">Test - Membership</p>
+                </section>
+        
+                <section id="security" class="content-section">
+                    <p style="color: aqua;">Test - Security</p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <div class="col-md-12 col-lg-10 mt-2 text-white">
+          <p class="footer-title">&copy; <script>document.write(new Date().getFullYear());</script> CODEPOLITAN. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        function showSection(sectionId) {
+            // Sembunyikan semua section
+            document.querySelectorAll('.content-section').forEach(function(section) {
+                section.style.display = 'none';
+            });
+        
+            // Tampilkan section yang dipilih
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        document.querySelectorAll('.group-profile').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('.group-profile').forEach(function(link) {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codeflix</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome-free/all.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css">
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="navbar-icon" src="assets/img/codeflix logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown kategori-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  KATEGORI
+                </a>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Anime</a></li>
+                    <li><a class="dropdown-item" href="#">Classic</a></li>
+                    <li><a class="dropdown-item" href="#">Comedies</a></li>
+                    <li><a class="dropdown-item" href="#">Crime</a></li>
+                    <li><a class="dropdown-item" href="#">Documenteries</a></li>
+                    <li><a class="dropdown-item" href="#">Drama</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                    <li><a class="dropdown-item" href="#">Hollywood</a></li>
+                    <li><a class="dropdown-item" href="#">Horror</a></li>
+                    <li><a class="dropdown-item" href="#">Independent</a></li>
+                    <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                    <li><a class="dropdown-item" href="#">Kids & Family</a></li>
+                    <li><a class="dropdown-item" href="#">Korean</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="dropdown-item" href="#">Musicals</a></li>
+                    <li><a class="dropdown-item" href="#">Romance</a></li>
+                    <li><a class="dropdown-item" href="#">Sci-fi</a></li>
+                    <li><a class="dropdown-item" href="#">Shorts</a></li>
+                    <li><a class="dropdown-item" href="#">Sports</a></li>
+                    <li><a class="dropdown-item" href="#">Stand-up Comedy</a></li>
+                    <li><a class="dropdown-item" href="#">Thriller</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex" role="search">
+            <input class="form-control search-box" type="search" placeholder="Cari Disini" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </form>
+          <li class="d-flex nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bell bell-icon"></i>
+            </a>
+            <ul class="dropdown-menu notification">
+              <li>
+                <a class="dropdown-item notification-item" href="#">
+                  <img class="time-subscribe" src="assets/img/Clock.png" alt="">
+                  <div class="notification-content">
+                    <p class="multi-line-text-subscribe">Subscribe Premium<br>Telah Habis!</p>
+                    <span class="notification-date">Hari Ini</span>
+                  </div>
+                </a>
+              </li>                                         
+              <li>
+                <a class="dropdown-item notification-item" href="#">
+                  <img class="time-subscribe" src="assets/img/Kingkong.png" alt="">
+                  <div class="notification-content">
+                    <p class="multi-line-text-subscribe">Film Baru</p>
+                    <p class="multi-line-text-new-movie">Khong Guan Super</p>
+                    <span class="notification-date">1 Hari Yang Lalu</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item notification-item" href="#">
+                  <img class="time-subscribe" src="assets/img/Blackhat.png" alt="">
+                  <div class="notification-content">
+                    <p class="multi-line-text-subscribe">Film Baru</p>
+                    <p class="multi-line-text-new-movie">Black Hat</p>
+                    <span class="notification-date">2 Hari Yang Lalu</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item notification-item" href="#">
+                  <img class="time-subscribe" src="assets/img/Kingkong.png" alt="">
+                  <div class="notification-content">
+                    <p class="multi-line-text-subscribe">Film Baru</p>
+                    <p class="multi-line-text-new-movie">Laugh Tate</p>
+                    <span class="notification-date">2 Hari Yang Lalu</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="d-flex nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user user-icon"></i>
+            </a>
+            <ul class="dropdown-menu user-info">
+              <li><a class="dropdown-item user-info-item" href="#"><i class="fa-solid fa-circle-user"></i> Profile Setting</a></li>
+              <li><a class="dropdown-item user-info-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+            </ul>
+          </li>
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="breadcrumb-link-home" href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Lion King</li>
+        </ol>
+    </nav>
+    <div class="container-movie">
+        <div class="row">
+            <div class="col">
+              <img class="thumbnail-movie" src="assets/img/Lion King.png" alt="">
+            </div>
+            <div class="col">
+              <h5 class="movie-title">Lion King</h5>
+              <span class="year-movie">2024</span>
+              <span class="dash">.</span>
+              <span class="duration-movie">1h 58m</span>
+              <p class="prolog-movie">
+                After the murder of his father, a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.
+              </p>
+              <div class="badge-category">
+                  <span class="badge rounded-pill badge-category-movie">Animal</span>
+                  <span class="badge rounded-pill badge-category-movie">Adventure</span>
+                  <span class="badge rounded-pill badge-category-movie">Drama</span>
+              </div>
+            </div>
+            <div class="col">
+                <div class="rectangle-rating">
+                    <p class="rating-movie">Rating</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star star-ratings"></i>
+                        <i class="fa-solid fa-star star-ratings"></i>
+                        <i class="fa-solid fa-star star-ratings"></i>
+                        <i class="fa-solid fa-star star-ratings"></i>
+                        <i class="fa-solid fa-star star-ratings"></i>
+                        <i class="fa-solid fa-star star-ratings"></i>
+                        <i class="fa-solid fa-star star-ratings"></i>
+                        <i class="fa-solid fa-star-half-stroke star-ratings"></i>
+                        <i class="fa-regular fa-star star-ratings"></i>
+                        <i class="fa-regular fa-star star-ratings"></i>
+                    </div>
+                    <span class="average-rating">8,3 / <span class="per">10</span></span>
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="director-movie">Director</h6>
+                            <h6 class="director-movie-name">Jon Favreau</h6>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="movie-info">
+                                <h6 class="writters-movie">Writters</h6>
+                                <h6 class="writters-movie-name">Jeff Nathanson, Irene Mecchi, Jonathan Roberts</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="movie-info">
+                                <h6 class="writters-movie">Star</h6>
+                                <h6 class="star-movie-name">Donald Glover, Beyoncé, Seth Rogen</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="ratio ratio-16x9 mt-4">
+            <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+        </div>
+        <div class="badge-frame-video">
+            <span class="badge rounded-pill text badge-frame-video-tools mb-3">
+                <i class="fa-regular fa-lightbulb light-icon"></i>
+                Matikan Lampu
+            </span>
+            <span class="badge rounded-pill text badge-frame-video-tools ml-4">
+                <i class="fa-solid fa-film film-icon"></i>
+                Trailer
+            </span>
+            <span class="badge rounded-pill text badge-frame-video-rating">
+                <i class="fa-solid fa-film film-icon"></i>
+                Berikan Rating
+            </span>
+        </div>
+    </div>
+    <h3 class="new-added-title">New Added</h3>
+    <footer>
+      <div class="col-md-12 col-lg-10 mt-2 text-white">
+          <p class="footer-title">&copy; <script>document.write(new Date().getFullYear());</script> CODEPOLITAN. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
