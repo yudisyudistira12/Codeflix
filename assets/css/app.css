@@ -15,138 +15,6 @@ body, html {
     src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
 }
 
-.login-photo {
-    width: 1200px;
-    height: 780px;
-    margin-left: -10px;
-    overflow: hidden;
-}
-
-.codeflix-title {
-    width: 211px;
-    height: 33px;
-    margin-left: -50px;
-    margin-top: 94px;
-}
-
-.codeflix-sign-in {
-    color: #fff;
-    font-weight: 600;
-    font-size: 42px;
-    margin-top: 3rem;
-    margin-left: -10px;
-    font-family: "Kanit", sans-serif;
-}
-
-.form {
-    margin-left: -200px;
-}
-
-.form-label-email {
-    color: #fff;
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.form-email {
-    width: 493px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #fff;
-}
-
-.form-email:focus {
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #1ABC9C;
-}
-
-.form-label-password {
-    color: #fff;
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.form-password {
-    width: 493px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: transparent;
-}
-
-.form-password:focus {
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #1ABC9C;
-}
-
-.label-check {
-    color: #fff;
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
-
-.forgot-password {
-    margin-left: 15.5rem;
-    text-decoration: none;
-    color: #1ABC9C;
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
-
-.btn-sign-in {
-    width: 490px;
-    height: auto;
-    border-radius: 10px;
-    background-color: #1ABC9C;
-    border-color: #1ABC9C;
-    font-family: "Kanit", sans-serif;
-    font-weight: 800;
-    font-size: 14px;
-}
-
-.btn-sign-in:hover{
-    background-color: transparent;
-    border-color: #1ABC9C;
-}
-
-
-.btn-sign-google {
-    width: 490px;
-    height: auto;
-    border-radius: 10px;
-    background-color: transparent;
-    border-color: #fff;
-    font-family: "Kanit", sans-serif;
-    font-weight: 800;
-    font-size: 14px;
-}
-
-.btn-sign-google:hover{
-    background-color: #1ABC9C;
-    border-color: #1ABC9C;
-}
-
-.register {
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #fff;
-    margin-left: -150px;
-}
-
-.small{
-    margin-left: 0.2rem;
-    text-decoration: none;
-    font-size: 16px;
-    color: #1ABC9C;
-}
-
 .bg-body-nav {
     background-color: #142A36;
 }
@@ -244,8 +112,10 @@ body, html {
 
 .dropdown-menu.notification {
     background-color: #132029;
-    margin-left: -100px;
+    margin-left: -200px;
     border: 1px solid #1ABC9C;
+    width:250px;
+    height: auto;
 }
 
 .dropdown-item.notification-item{
@@ -347,6 +217,7 @@ body, html {
     border-radius: 20px;
     border: none;
     margin: 0.5em;
+    
 }
 
 .badge-rating {
@@ -363,6 +234,382 @@ body, html {
     width: 15px;
 }
 
+section {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+
+.swiper {
+    width: calc(100% - 15%);
+    height: auto;
+    margin-top: 1rem;
+}
+
+
+.swiper-slide > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* Pastikan elemen <a> menggunakan Flexbox */
+.notification-item {
+    display: flex;
+    align-items: center; /* Untuk mengatur elemen dalam satu baris vertikal sejajar */
+    padding: 10px; /* Menambah padding untuk memberi ruang antara teks dan tepi elemen */
+    text-decoration: none; /* Menghapus underline pada link */
+  }
+  
+  .notification-item img.time-subscribe {
+    margin-right: 10px; /* Menambahkan jarak antara gambar dan teks */
+    width: 70px; /* Sesuaikan ukuran gambar */
+    height: auto; /* Sesuaikan ukuran gambar */
+  }
+  
+  .notification-item p {
+    text-align: left;
+    color: #1ABC9C; /* Mengatur warna teks */
+    font-size: 14px; /* Mengatur ukuran font */
+    font-weight: 600;
+    font-family: "Kanit", sans-serif;
+  }
+  
+  .notification-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .notification-content {
+    display: flex;
+    flex-direction: column; /* Mengatur konten dalam kolom */
+    margin-left: 10px; /* Memberi jarak antara gambar dan teks */
+  }
+  
+  .multi-line-text-subscribe {
+    margin: 0; /* Menghilangkan margin default */
+    color: #1ABC9C; /* Mengatur warna teks */
+    font-size: 14px; /* Mengatur ukuran font */
+    font-weight: 600;
+    font-family: "Kanit", sans-serif;
+  }
+
+  .multi-line-text-subscribe:hover {
+    color: #fff;
+  }
+
+  .multi-line-text-new-movie {
+    margin: 0; /* Menghilangkan margin default */
+    color: #fff; /* Mengatur warna teks */
+    font-size: 14px; /* Mengatur ukuran font */
+    font-weight: 600;
+    font-family: "Kanit", sans-serif;
+  }
+
+  .multi-line-text-subscribe:hover {
+    color: #1ABC9C;
+  }
+  
+  .notification-date {
+    margin-top: 5px; /* Memberi sedikit jarak antara teks utama dan tanggal */
+    font-size: 12px; /* Ukuran font lebih kecil untuk tanggal */
+    color: #aaa; /* Warna teks untuk tanggal */
+  }
+
+  .breadcrumb{
+    margin-left: 6rem;
+    margin-top: 1rem;
+  }
+
+  .breadcrumb-link-home {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .breadcrumb-item.active{
+    color: #1ABC9C;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .container-movie {
+    background-color: #142A36;
+    border-radius: 20px;
+    width: 1500px;
+    height: auto;
+    margin-left: 6rem;
+  }
+
+  .thumbnail-movie {
+    width: 222px;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+
+  .movie-title {
+    font-size: 46px;
+    font-weight: 600;
+    font-family: "Kanit", sans-serif;
+    color: #fff;
+    margin-left: -150px;
+    margin-top: 2rem;
+  }
+
+  .year-movie {
+    color: #1ABC9C;
+    font-family: "Kanit", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: -150px;
+  }
+
+  .dash {
+    color: #1ABC9C;
+    font-size: 22px;
+  }
+
+  .duration-movie {
+    color: #1ABC9C;
+    font-family: "Kanit", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 8px;
+  }
+
+  .prolog-movie {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: #fff;
+    width: 390px;
+    height: 105px;
+    margin-left: -150px;
+    margin-top: 2rem;
+  }
+
+  .badge-category-movie {
+    border: 1px solid #fff;
+    font-weight: 100;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    justify-content: space-between;
+  }
+
+  .badge-category {
+    margin-left: -150px;
+  }
+
+  .rectangle-rating {
+    width: 323px;
+    height: 104px;
+    border-radius: 10px;
+    background-color: #132029;
+    margin-top: 1rem;
+    margin-left: 7rem;
+  }
+
+  .rating-movie {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 1rem;
+  }
+
+  .star {
+    margin-left: 0.8rem;
+  }
+
+  .star-ratings {
+    color: #FFC807;
+    width: 25px;
+  }
+
+  .average-rating {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 200;
+    font-size: 20px;
+    margin-left: 15rem;
+  }
+
+  .per {
+    font-family: "Montserrat", sans-serif;
+    color: #455D6A;
+    font-weight: 200;
+    font-size: 18px;
+  }
+
+  .director-movie {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+
+  .director-movie-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    color: #1ABC9C;
+    margin-left: 2rem;
+  }
+
+  .movie-info {
+    display: flex;
+    align-items: center;
+}
+
+.writters-movie {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.writters-movie-name{
+    color: #1ABC9C;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-top: 1rem;
+    margin-left: 35px;
+}
+
+.star-movie-name{
+    color: #1ABC9C;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-top: 1rem;
+    margin-left: 65px;
+}
+
+.ratio {
+    width: 1430px;
+    height: 565px;
+    margin-left: 2rem;
+}
+
+.badge-frame-video {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.badge-frame-video-tools {
+    border: 1px solid #1ABC9C;
+    font-weight: 100;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.badge-frame-video-tools {
+    border: 1px solid #1ABC9C;
+    font-weight: 100;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.badge-frame-video-rating {
+    border: 1px solid #1ABC9C;
+    font-weight: 100;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    float: right;
+}
+
+.light-icon {
+    color: #1ABC9C;
+    width: 15px;
+}
+
+.film-icon {
+    color: #1ABC9C;
+    width: 15px;
+}
+
+
+.container-info {
+    background: transparent;
+    height: auto;
+}
+
+.sidebar-left {
+    width: 328px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 21px;
+    background: #142A36;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.list-group-item{
+    background-color: transparent;
+    border: none;
+}
+
+.group-profile {
+    color: #fff;
+    text-decoration: none;
+}
+
+.group-profile:focus, .group-profile.active {
+    color: #1ABC9C;
+}
+
+.content-section {
+    display: none;
+}
+
+.card-image-movie-list {
+    width: 205px;
+    height: 308px   ;
+}
+
+.card-movie-list {
+    margin: 50px 10rem 0px 130px;
+}
+
+.load-more {
+    margin-left: 52rem;
+    border: 1px solid #1ABC9C;
+    color: #fff;
+    width: 233px;
+    height: auto;
+}
+
+.load-more:hover {
+    background-color: transparent;
+    color: #1ABC9C;
+    border: 1px solid #1ABC9C;
+}
+
+.rotate-right {
+    color: #1ABC9C;
+}
+
+
+
+
+
+
+
+
+
 footer{
     background-color: #142A36;
 }
@@ -371,6 +618,296 @@ footer{
     margin-left: 45rem;
     font-size: 16px;
     font-weight: 600;
+}
+
+@media (max-width: 767px) {    
+    .navbar-icon {
+        display: none;
+    }
+    
+    .navbar-nav .dropdown-toggle {
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+    }
+    
+    .navbar-nav .dropdown-toggle:focus, 
+    .navbar-nav .dropdown-toggle:hover {
+        color: #fff;
+    }
+    
+    .navbar-nav .dropdown-menu {
+        background-color: #132029;
+        border: 1px solid #1ABC9C;
+        border-radius: 20px;
+        width: 150px;
+    }
+    
+    .kategori-dropdown .dropdown-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .kategori-dropdown .dropdown-menu.show{
+        display: flex;
+    }
+    
+    .navbar-nav .dropdown-item {
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .navbar-nav .dropdown-item:hover, 
+    .navbar-nav .dropdown-item:focus {
+        color: #1ABC9C;
+        background-color: transparent;
+    }
+    
+    .d-flex {
+        margin-left: -50px;
+    }
+    
+    .search-box {
+        width: 150px;
+        height: auto;
+        border-radius: 50px;
+        background-color: #132029;
+        border: none;
+        margin-left: -100px;
+    }
+    
+    .search-box:focus {
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid #1ABC9C;
+    }
+    
+    .search-box::placeholder {
+        color: #455D6A;
+        opacity: 1;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+    .search-icon {
+        margin-left: -50px;
+        margin-top: 0.6rem;
+        color: #fff;
+    }
+    
+    .bell-icon {
+        color: #fff;
+        margin-left: -20px;
+        margin-top: 0.5rem;
+    }
+    
+    .user-icon {
+        color: #fff;
+        margin-left: -70px;
+        margin-top: 0.5rem;
+    }
+    
+    
+    .dropdown-menu.notification {
+        background-color: #132029;
+        margin-left: -200px;
+        border: 1px solid #1ABC9C;
+        width:250px;
+        height: auto;
+    }
+    
+    .dropdown-item.notification-item{
+        color: #1ABC9C;
+    }
+    
+    .dropdown-item.notification-item:hover{
+        background-color: transparent;
+        color: #fff;
+    }
+    
+    .dropdown-menu.user-info {
+        background-color: #132029;
+        margin-left: -170px;
+        border: 1px solid #1ABC9C;
+    }
+    
+    .dropdown-item.user-info-item{
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    
+    .dropdown-item.user-info-item:hover{
+        background-color: transparent;
+        color: #1ABC9C;
+    }
+    
+    
+    
+    .jumbotron {
+        width: 100px;
+        height: 500px;
+        margin-left: 75px;
+        margin-top: 100px;
+        background: linear-gradient(to top, rgba(20, 42, 54, 1) 100%, rgba(20, 42, 54, 0) 0%);
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden; /* Pastikan elemen lain tidak mempengaruhi layout */
+    }
+    
+    
+    
+    .jumbotron-title {
+        color: #fff;
+        font-family: "Kanit", sans-serif;
+        font-weight: 600;
+        font-size: 70px;
+        margin-left: 4rem;
+        margin-top: 8rem; /* Ubah nilai ini untuk menurunkan posisi */
+    }
+    
+    .jumbotron-img {
+        width: 731px;
+        height: 500px;
+        float: right;
+        margin-top: -220px;
+    }
+    
+    .lead {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100;
+        font-size: 18px;
+        color: #fff;
+        width: 390px;
+        height: 105px;
+        margin-left: 60px;
+        margin-top: 2rem;
+    }
+    
+    .btn-play {
+        width: 284px;
+        border-radius: 10px;
+        margin-left: 60px;
+        background-color: #1ABC9C;
+        border: 1px solid #1ABC9C;
+    }
+    
+    .btn-play:hover{
+        background-color: transparent;
+        border: 1px solid #1ABC9C;
+    }
+    
+    .new-added-title {
+        font-family: "Kanit", sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        margin-left: 155px;
+        color: #fff;
+        margin-top: 2rem;
+    }
+    
+    
+    .card {
+        width: 205px;
+        height: 308px;
+        border-radius: 20px;
+        border: none;
+        margin: 0.5em;
+    }
+    
+    .badge-rating {
+        width: 80px;
+        margin-top: -300px;
+        border-radius: 10px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        margin-left: 1rem;
+    }
+    
+    .star-rating {
+        width: 15px;
+    }
+    
+    /* Pastikan elemen <a> menggunakan Flexbox */
+    .notification-item {
+        display: flex;
+        align-items: center; /* Untuk mengatur elemen dalam satu baris vertikal sejajar */
+        padding: 10px; /* Menambah padding untuk memberi ruang antara teks dan tepi elemen */
+        text-decoration: none; /* Menghapus underline pada link */
+      }
+      
+      .notification-item img.time-subscribe {
+        margin-right: 10px; /* Menambahkan jarak antara gambar dan teks */
+        width: 70px; /* Sesuaikan ukuran gambar */
+        height: auto; /* Sesuaikan ukuran gambar */
+      }
+      
+      .notification-item p {
+        text-align: left;
+        color: #1ABC9C; /* Mengatur warna teks */
+        font-size: 14px; /* Mengatur ukuran font */
+        font-weight: 600;
+        font-family: "Kanit", sans-serif;
+      }
+      
+      .notification-item {
+        display: flex;
+        align-items: center;
+      }
+      
+      .notification-content {
+        display: flex;
+        flex-direction: column; /* Mengatur konten dalam kolom */
+        margin-left: 10px; /* Memberi jarak antara gambar dan teks */
+      }
+      
+      .multi-line-text-subscribe {
+        margin: 0; /* Menghilangkan margin default */
+        color: #1ABC9C; /* Mengatur warna teks */
+        font-size: 14px; /* Mengatur ukuran font */
+        font-weight: 600;
+        font-family: "Kanit", sans-serif;
+      }
+    
+      .multi-line-text-subscribe:hover {
+        color: #fff;
+      }
+    
+      .multi-line-text-new-movie {
+        margin: 0; /* Menghilangkan margin default */
+        color: #fff; /* Mengatur warna teks */
+        font-size: 14px; /* Mengatur ukuran font */
+        font-weight: 600;
+        font-family: "Kanit", sans-serif;
+      }
+    
+      .multi-line-text-subscribe:hover {
+        color: #1ABC9C;
+      }
+      
+      .notification-date {
+        margin-top: 5px; /* Memberi sedikit jarak antara teks utama dan tanggal */
+        font-size: 12px; /* Ukuran font lebih kecil untuk tanggal */
+        color: #aaa; /* Warna teks untuk tanggal */
+      }
+      
+      
+    
+    footer{
+        background-color: #142A36;
+    }
+    
+    .footer-title {
+        margin-left: 45rem;
+        font-size: 16px;
+        font-weight: 600;
+    }
 }
 
 

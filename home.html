@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome-free/all.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg bg-body-nav">
@@ -26,7 +27,7 @@
                 </a>
                 <div class="dropdown-menu">
                   <ul>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="category.html">Action</a></li>
                     <li><a class="dropdown-item" href="#">Anime</a></li>
                     <li><a class="dropdown-item" href="#">Classic</a></li>
                     <li><a class="dropdown-item" href="#">Comedies</a></li>
@@ -65,9 +66,45 @@
               <i class="fa-solid fa-bell bell-icon"></i>
             </a>
             <ul class="dropdown-menu notification">
-              <li><a class="dropdown-item notification-item" href="#">Test</a></li>
-              <li><a class="dropdown-item notification-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item notification-item" href="#">Something else here</a></li>
+              <li>
+                <a class="dropdown-item notification-item" href="#">
+                  <img class="time-subscribe" src="assets/img/Clock.png" alt="">
+                  <div class="notification-content">
+                    <p class="multi-line-text-subscribe">Subscribe Premium<br>Telah Habis!</p>
+                    <span class="notification-date">Hari Ini</span>
+                  </div>
+                </a>
+              </li>                                         
+              <li>
+                <a class="dropdown-item notification-item" href="#">
+                  <img class="time-subscribe" src="assets/img/Kingkong.png" alt="">
+                  <div class="notification-content">
+                    <p class="multi-line-text-subscribe">Film Baru</p>
+                    <p class="multi-line-text-new-movie">Khong Guan Super</p>
+                    <span class="notification-date">1 Hari Yang Lalu</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item notification-item" href="#">
+                  <img class="time-subscribe" src="assets/img/Blackhat.png" alt="">
+                  <div class="notification-content">
+                    <p class="multi-line-text-subscribe">Film Baru</p>
+                    <p class="multi-line-text-new-movie">Black Hat</p>
+                    <span class="notification-date">2 Hari Yang Lalu</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item notification-item" href="#">
+                  <img class="time-subscribe" src="assets/img/Kingkong.png" alt="">
+                  <div class="notification-content">
+                    <p class="multi-line-text-subscribe">Film Baru</p>
+                    <p class="multi-line-text-new-movie">Laugh Tate</p>
+                    <span class="notification-date">2 Hari Yang Lalu</span>
+                  </div>
+                </a>
+              </li>
             </ul>
           </li>
           <li class="d-flex nav-item dropdown">
@@ -75,7 +112,7 @@
               <i class="fa-solid fa-user user-icon"></i>
             </a>
             <ul class="dropdown-menu user-info">
-              <li><a class="dropdown-item user-info-item" href="#"><i class="fa-solid fa-circle-user"></i> Profile Setting</a></li>
+              <li><a class="dropdown-item user-info-item" href="overview-account.html"><i class="fa-solid fa-circle-user"></i> Profile Setting</a></li>
               <li><a class="dropdown-item user-info-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
             </ul>
           </li>
@@ -91,68 +128,175 @@
       <a class="btn btn-primary btn-play btn-lg" href="#" role="button">Play</a>
     </div>
     <h3 class="new-added-title">New Added</h3>
-    <!-- <div id="carouselExample" class="carousel slide mt-4">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="card">
-            <img src="assets/img/Trex.png" class="card-img-top" alt="...">
-            <span class="badge rounded-pill text-bg-dark badge-rating">
-              <img class="star-rating" src="assets/img/star-rating.png" alt="">
-              (8,3)
-            </span>
+    <section>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/img/Trex.png" class="card-img-top" alt="...">
+              <span class="badge rounded-pill text-bg-dark badge-rating">
+                <img class="star-rating" src="assets/img/star-rating.png" alt="">
+                (8,3)
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/img/Foundation.png" class="card-img-top" alt="...">
+              <span class="badge rounded-pill text-bg-dark badge-rating">
+                <img class="star-rating" src="assets/img/star-rating.png" alt="">
+                (8,3)
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/img/Godzilla Kingkong.png" class="card-img-top" alt="...">
+              <span class="badge rounded-pill text-bg-dark badge-rating">
+                <img class="star-rating" src="assets/img/star-rating.png" alt="">
+                (8,3)
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/img/Lowlifes.png" class="card-img-top" alt="...">
+              <span class="badge rounded-pill text-bg-dark badge-rating">
+                <img class="star-rating" src="assets/img/star-rating.png" alt="">
+                (8,3)
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/img/Boy.png" class="card-img-top" alt="...">
+              <span class="badge rounded-pill text-bg-dark badge-rating">
+                <img class="star-rating" src="assets/img/star-rating.png" alt="">
+                (8,3)
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/img/Fights.png" class="card-img-top" alt="...">
+              <span class="badge rounded-pill text-bg-dark badge-rating">
+                <img class="star-rating" src="assets/img/star-rating.png" alt="">
+                (8,3)
+              </span>
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="card">
-            <img src="assets/img/Trex.png" class="card-img-top" alt="...">
-            <span class="badge rounded-pill text-bg-dark badge-rating">
-              <img class="star-rating" src="assets/img/star-rating.png" alt="">
-              (8,3)
-            </span>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card">
-            <img src="assets/img/Trex.png" class="card-img-top" alt="...">
-            <span class="badge rounded-pill text-bg-dark badge-rating">
-              <img class="star-rating" src="assets/img/star-rating.png" alt="">
-              (8,3)
-            </span>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card">
-            <img src="assets/img/Trex.png" class="card-img-top" alt="...">
-            <span class="badge rounded-pill text-bg-dark badge-rating">
-              <img class="star-rating" src="assets/img/star-rating.png" alt="">
-              (8,3)
-            </span>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card">
-            <img src="assets/img/Trex.png" class="card-img-top" alt="...">
-            <span class="badge rounded-pill text-bg-dark badge-rating">
-              <img class="star-rating" src="assets/img/star-rating.png" alt="">
-              (8,3)
-            </span>
-          </div>
-        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> -->
+    </section>
+    <h3 class="new-added-title">Trending</h3>
+    <section>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/img/Trex.png" class="card-img-top" alt="...">
+              <span class="badge rounded-pill text-bg-dark badge-rating">
+                <img class="star-rating" src="assets/img/star-rating.png" alt="">
+                (8,3)
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/img/Foundation.png" class="card-img-top" alt="...">
+              <span class="badge rounded-pill text-bg-dark badge-rating">
+                <img class="star-rating" src="assets/img/star-rating.png" alt="">
+                (8,3)
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/img/Godzilla Kingkong.png" class="card-img-top" alt="...">
+              <span class="badge rounded-pill text-bg-dark badge-rating">
+                <img class="star-rating" src="assets/img/star-rating.png" alt="">
+                (8,3)
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/img/Lowlifes.png" class="card-img-top" alt="...">
+              <span class="badge rounded-pill text-bg-dark badge-rating">
+                <img class="star-rating" src="assets/img/star-rating.png" alt="">
+                (8,3)
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/img/Boy.png" class="card-img-top" alt="...">
+              <span class="badge rounded-pill text-bg-dark badge-rating">
+                <img class="star-rating" src="assets/img/star-rating.png" alt="">
+                (8,3)
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="assets/img/Fights.png" class="card-img-top" alt="...">
+              <span class="badge rounded-pill text-bg-dark badge-rating">
+                <img class="star-rating" src="assets/img/star-rating.png" alt="">
+                (8,3)
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
     <footer>
       <div class="col-md-12 col-lg-10 mt-2 text-white">
           <p class="footer-title">&copy; <script>document.write(new Date().getFullYear());</script> CODEPOLITAN. All rights reserved.</p>
       </div>
     </footer>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        speed: 400,
+        spaceBetween: 10,
+        slidesPerView: 5,
+        autoplay: {
+          delay: 3000,  // Mengatur jeda antar slide dalam milidetik (3 detik)
+          disableOnInteraction: false,  // Swiper akan tetap autoplay meskipun pengguna berinteraksi dengan slide
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>
