@@ -1,13 +1,12 @@
 body, html {
     background-color: #132029;
     height: 100%;
+    overflow-x: hidden;
 }
 
 @font-face {
     font-family: 'kanit-regular';
     src: url('../fonts/Kanit/Kanit-Regular.ttf');
-    font-weight: 400;
-    font-style: normal;
 }
 
 @font-face {
@@ -503,6 +502,7 @@ section {
     margin-left: 2rem;
 }
 
+
 .badge-frame-video {
     margin-left: 2rem;
     margin-top: 1rem;
@@ -548,13 +548,17 @@ section {
 
 .sidebar-left {
     width: 328px;
-    height: auto;
-    flex-shrink: 0;
+    height: 182px;
     border-radius: 21px;
     background: #142A36;
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
     margin-top: 2rem;
     margin-left: 5rem;
+}
+
+.list-group{
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 .list-group-item{
@@ -565,6 +569,10 @@ section {
 .group-profile {
     color: #fff;
     text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+
 }
 
 .group-profile:focus, .group-profile.active {
@@ -602,6 +610,296 @@ section {
     color: #1ABC9C;
 }
 
+.column-rating {
+    border-left: 1px solid gray; 
+    margin-top: 1rem;
+}
+
+.overview-title {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #1ABC9C;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.overview-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.rectangle-overview{
+    width: 1200px;
+    height: auto;
+    border-radius: 20px;
+    background-color: #142A36;
+    margin-left: 1rem;
+}
+
+.overview-plan {
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #1ABC9C;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    width: 193px;
+}
+
+.overview-payment-date {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 2rem;
+    width: 300px;
+}
+
+.overview-plan-membership {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 2rem;
+    width: 468px;
+}
+
+.e-payment-vendor {
+    width: 54px;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 38rem;
+}
+
+.e-payment-number { 
+    margin-top: 2rem;
+    margin-left: -10px;
+}
+
+.payment-number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+}
+
+.line-overview {
+    border: 2px solid #3c5664;
+    margin-top: 20px;
+}
+
+.btn-manage-membership {
+    text-decoration: none;
+    margin-left: 65rem;
+}
+
+.manage-membership {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1ABC9C;
+}
+
+.manage-membership:hover {
+    color: #fff;
+}
+
+.contact-info {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.label-full-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 3.5rem;
+}
+
+.form-full-name {
+    width: 700px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #1ABC9C;
+    margin-left: 15rem;
+    margin-top: 1rem;
+}
+
+.form-full-name:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.form-email {
+    width: 700px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #1ABC9C;
+    margin-left: 17.5rem;
+    margin-top: 1rem;
+}
+
+.form-email:focus {
+color: #fff;
+background-color: transparent;
+border: 1px solid #1ABC9C;
+}
+
+.form-phone-number {
+    width: 700px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #1ABC9C;
+    margin-left: 12rem;
+    margin-top: 1rem;
+}
+
+.form-phone-number:focus {
+color: #fff;
+background-color: transparent;
+border: 1px solid #1ABC9C;
+}
+
+.form-address {
+    width: 700px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #1ABC9C;
+    margin-left: 15.8rem;
+    margin-top: 1rem;
+}
+
+.form-address:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.form-new-password {
+    width: 700px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #1ABC9C;
+    margin-left: 14.5rem;
+    margin-top: 1rem;
+}
+
+.form-new-password:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.form-confirm-password {
+    width: 700px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #1ABC9C;
+    margin-left: 9.5rem;
+    margin-top: 1rem;
+}
+
+.form-confirm-password:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.btn-submit {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #1ABC9C;
+    border: 1px solid #1ABC9C;
+    margin-left: 24.5rem;
+}
+
+.btn-submit:hover {
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.btn-cancel {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+    margin-left: 1rem;
+    color: #fff;
+}
+
+.btn-cancel:hover {
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.btn-submit-password {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #1ABC9C;
+    border: 1px solid #1ABC9C;
+    margin-left: 1rem;
+}
+
+.btn-submit-password:hover {
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.btn-cancel-password {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    margin-left: 57rem;
+    color: #1ABC9C;
+}
+
+.btn-cancel-password:hover {
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+.btn-delete-account {
+    border-radius: 20px;
+    width: 1210px;
+    margin-left: 1rem;
+    background-color: transparent;
+    border: 3px solid #1ABC9C;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.btn-delete-account:hover{
+    background-color: #fff;
+    border: 3px solid #1ABC9C;
+    color: #1ABC9C;
+}
+
 
 
 
@@ -612,10 +910,11 @@ section {
 
 footer{
     background-color: #142A36;
+    margin-top: 17rem;
 }
 
 .footer-title {
-    margin-left: 45rem;
+    margin-left: 55rem;
     font-size: 16px;
     font-weight: 600;
 }

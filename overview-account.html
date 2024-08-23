@@ -123,27 +123,123 @@
             <div class="col-md-6 sidebar-left">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <a class="group-profile" href="#overview" onclick="showSection('overview')">Overview</a>
+                        <a class="group-profile" href="#overview" onclick="showSection('overview')"><i class="fa-solid fa-circle-user"></i> Overview</a>
                     </li>
                     <li class="list-group-item">
-                        <a class="group-profile" href="#membership" onclick="showSection('membership')">Membership</a>
+                        <a class="group-profile" href="#membership" onclick="showSection('membership')"><i class="fa-solid fa-address-card"></i> Membership</a>
                     </li>
                     <li class="list-group-item">
-                        <a class="group-profile" href="#overview" onclick="showSection('overview')">Overview</a>
+                        <a class="group-profile" href="#security" onclick="showSection('security')"> <i class="fa-solid fa-user-shield"></i> Security</a>
                     </li>
                 </ul>
             </div>
             <div class="col-md-6">
                 <section id="overview" class="content-section">
-                    <h4>Overview</h4>
+                    <h5 class="overview-title">Overview</h5>
+                    <span class="overview-subtitle">Membership</span>
+                    <div class="rectangle-overview mt-2">
+                      <div class="row">
+                        <div class="col">
+                          <h2 class="overview-plan">Basic Plan</h2>
+                          <h6 class="overview-payment-date">Next Payment : 16 Juli 2024</h6>
+                        </div>
+                        <div class="col">
+                          <img class="e-payment-vendor" src="assets/img/Dana.png" alt="">
+                        </div>
+                        <div class="col e-payment-number">
+                          <span class="payment-number">62-813••••9541</span>
+                        </div>
+                      </div>
+                      <hr class="line-overview">
+                      <a class="btn-manage-membership" href="#" id="change-plan"><span class="manage-membership">Manage Membership</span></a>
+                    </div>
+                    <h6 class="contact-info">Contact Info</h6>
+                    <div class="rectangle-overview mb-4">
+                      <form action="">
+                        <div class="row">
+                          <div class="col mb-4">
+                            <span class="label-full-name">Full Name</span>
+                            <input class="form-full-name" type="text" name="" id="">
+                          </div>
+
+                          <div class="col mb-4">
+                            <span class="label-full-name">Email</span>
+                            <input class="form-email" type="text" name="" id="">
+                          </div>
+
+                          <div class="col mb-4">
+                            <span class="label-full-name">Phone Number</span>
+                            <input class="form-phone-number" type="text" name="" id="">
+                          </div>
+
+                          <div class="col mb-4">
+                            <span class="label-full-name">Address</span>
+                            <textarea class="form-address" name="" id=""></textarea>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-submit mb-4">Save</button>
+                        <button type="button" class="btn btn-primary btn-cancel mb-4">Cancel</button>
+                      </form>
+                    </div>
                 </section>
         
                 <section id="membership" class="content-section">
-                    <p style="color: aqua;">Test - Membership</p>
+                  <h5 class="overview-title">Membership</h5>
+                  <span class="overview-subtitle">Plan Detail</span>
+                  <div class="rectangle-overview mt-2">
+                    <div class="row">
+                      <div class="col">
+                        <h2 class="overview-plan">Basic Plan</h2>
+                        <h6 class="overview-plan-membership">720p video resolution, ad-free watching and more.</h6>
+                      </div>
+                    </div>
+                    <hr class="line-overview">
+                    <a class="btn-manage-membership" href=""><span class="manage-membership">Change Plan</span></a>
+                  </div>
+                  <h6 class="contact-info">Payment Info</h6>
+                  <div class="rectangle-overview mt-2">
+                    <div class="row">
+                      <div class="col">
+                        <h2 class="overview-plan">Basic Plan</h2>
+                        <h6 class="overview-payment-date">Next Payment : 16 Juli 2024</h6>
+                      </div>
+                      <div class="col">
+                        <img class="e-payment-vendor" src="assets/img/Dana.png" alt="">
+                      </div>
+                      <div class="col e-payment-number">
+                        <span class="payment-number">62-813••••9541</span>
+                      </div>
+                    </div>
+                    <hr class="line-overview">
+                  </div>
                 </section>
         
                 <section id="security" class="content-section">
-                    <p style="color: aqua;">Test - Security</p>
+                  <h5 class="overview-title">Security</h5>
+                  <span class="overview-subtitle">Change Password</span>
+                  <div class="rectangle-overview mb-4">
+                    <form action="">
+                      <div class="row">
+                        <div class="col mb-4">
+                          <span class="label-full-name">Old Password</span>
+                          <input class="form-full-name" type="password" name="" id="">
+                        </div>
+
+                        <div class="col mb-4">
+                          <span class="label-full-name">New Password</span>
+                          <input class="form-new-password" type="password" name="" id="">
+                        </div>
+
+                        <div class="col mb-4">
+                          <span class="label-full-name">Confirm New Password</span>
+                          <input class="form-confirm-password" type="password" name="" id="">
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-primary btn-cancel-password mb-4">Cancel</button>
+                      <button type="button" class="btn btn-primary btn-submit-password mb-4">Save</button>
+                    </form>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-delete-account mb-4">Delete Account</button>
                 </section>
             </div>
         </div>
@@ -156,23 +252,32 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        function showSection(sectionId) {
-            // Sembunyikan semua section
-            document.querySelectorAll('.content-section').forEach(function(section) {
-                section.style.display = 'none';
-            });
-        
-            // Tampilkan section yang dipilih
-            document.getElementById(sectionId).style.display = 'block';
-        }
-        document.querySelectorAll('.group-profile').forEach(function(link) {
-            link.addEventListener('click', function() {
-                document.querySelectorAll('.group-profile').forEach(function(link) {
-                    link.classList.remove('active');
-                });
-                this.classList.add('active');
-            });
-        });
-    </script>
+      function showSection(sectionId) {
+          // Sembunyikan semua section
+          document.querySelectorAll('.content-section').forEach(function(section) {
+              section.style.display = 'none';
+          });
+      
+          // Tampilkan section yang dipilih
+          document.getElementById(sectionId).style.display = 'block';
+          
+          // Tambahkan class active pada link yang diklik
+          document.querySelectorAll('.group-profile').forEach(function(link) {
+              link.classList.remove('active');
+          });
+          document.querySelector('.group-profile[href="#' + sectionId + '"]').classList.add('active');
+      }
+      
+      // Tampilkan Overview saat halaman dimuat
+      document.addEventListener('DOMContentLoaded', function() {
+          showSection('overview');
+      });
+
+      // Event listener untuk tautan "Change Plan"
+      document.getElementById('change-plan').addEventListener('click', function(event) {
+          event.preventDefault();
+          showSection('membership');
+      });
+  </script>
   </body>
 </html>
