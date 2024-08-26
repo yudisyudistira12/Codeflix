@@ -11,121 +11,138 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img class="navbar-icon" src="assets/img/codeflix logo.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown kategori-dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  KATEGORI
-                </a>
-                <div class="dropdown-menu">
-                  <ul>
-                    <li><a class="dropdown-item" href="category.html">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Anime</a></li>
-                    <li><a class="dropdown-item" href="#">Classic</a></li>
-                    <li><a class="dropdown-item" href="#">Comedies</a></li>
-                    <li><a class="dropdown-item" href="#">Crime</a></li>
-                    <li><a class="dropdown-item" href="#">Documenteries</a></li>
-                    <li><a class="dropdown-item" href="#">Drama</a></li>
-                  </ul>
-                  <ul>
-                    <li><a class="dropdown-item" href="#">Fantasy</a></li>
-                    <li><a class="dropdown-item" href="#">Hollywood</a></li>
-                    <li><a class="dropdown-item" href="#">Horror</a></li>
-                    <li><a class="dropdown-item" href="#">Independent</a></li>
-                    <li><a class="dropdown-item" href="#">Indonesia</a></li>
-                    <li><a class="dropdown-item" href="#">Kids & Family</a></li>
-                    <li><a class="dropdown-item" href="#">Korean</a></li>
-                  </ul>
-                  <ul>
-                    <li><a class="dropdown-item" href="#">Musicals</a></li>
-                    <li><a class="dropdown-item" href="#">Romance</a></li>
-                    <li><a class="dropdown-item" href="#">Sci-fi</a></li>
-                    <li><a class="dropdown-item" href="#">Shorts</a></li>
-                    <li><a class="dropdown-item" href="#">Sports</a></li>
-                    <li><a class="dropdown-item" href="#">Stand-up Comedy</a></li>
-                    <li><a class="dropdown-item" href="#">Thriller</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <form class="d-flex" role="search">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-nav">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fa-solid fa-bars text-white"></i>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img class="navbar-icon" src="assets/img/codeflix logo.png" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown kategori-dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                KATEGORI
+              </a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a class="dropdown-item" href="category.html">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Anime</a></li>
+                  <li><a class="dropdown-item" href="#">Classic</a></li>
+                  <li><a class="dropdown-item" href="#">Comedies</a></li>
+                  <li><a class="dropdown-item" href="#">Crime</a></li>
+                  <li><a class="dropdown-item" href="#">Documenteries</a></li>
+                  <li><a class="dropdown-item" href="#">Drama</a></li>
+                </ul>
+                <ul>
+                  <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                  <li><a class="dropdown-item" href="#">Hollywood</a></li>
+                  <li><a class="dropdown-item" href="#">Horror</a></li>
+                  <li><a class="dropdown-item" href="#">Independent</a></li>
+                  <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                  <li><a class="dropdown-item" href="#">Kids & Family</a></li>
+                  <li><a class="dropdown-item" href="#">Korean</a></li>
+                </ul>
+                <ul>
+                  <li><a class="dropdown-item" href="#">Musicals</a></li>
+                  <li><a class="dropdown-item" href="#">Romance</a></li>
+                  <li><a class="dropdown-item" href="#">Sci-fi</a></li>
+                  <li><a class="dropdown-item" href="#">Shorts</a></li>
+                  <li><a class="dropdown-item" href="#">Sports</a></li>
+                  <li><a class="dropdown-item" href="#">Stand-up Comedy</a></li>
+                  <li><a class="dropdown-item" href="#">Thriller</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex me-md-5" role="search">
             <input class="form-control search-box" type="search" placeholder="Cari Disini" aria-label="Search">
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
           </form>
-          <li class="d-flex nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-bell bell-icon"></i>
-            </a>
-            <ul class="dropdown-menu notification">
-              <li>
-                <a class="dropdown-item notification-item" href="#">
-                  <img class="time-subscribe" src="assets/img/Clock.png" alt="">
-                  <div class="notification-content">
-                    <p class="multi-line-text-subscribe">Subscribe Premium<br>Telah Habis!</p>
-                    <span class="notification-date">Hari Ini</span>
-                  </div>
-                </a>
-              </li>                                         
-              <li>
-                <a class="dropdown-item notification-item" href="#">
-                  <img class="time-subscribe" src="assets/img/Kingkong.png" alt="">
-                  <div class="notification-content">
-                    <p class="multi-line-text-subscribe">Film Baru</p>
-                    <p class="multi-line-text-new-movie">Khong Guan Super</p>
-                    <span class="notification-date">1 Hari Yang Lalu</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item notification-item" href="#">
-                  <img class="time-subscribe" src="assets/img/Blackhat.png" alt="">
-                  <div class="notification-content">
-                    <p class="multi-line-text-subscribe">Film Baru</p>
-                    <p class="multi-line-text-new-movie">Black Hat</p>
-                    <span class="notification-date">2 Hari Yang Lalu</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item notification-item" href="#">
-                  <img class="time-subscribe" src="assets/img/Kingkong.png" alt="">
-                  <div class="notification-content">
-                    <p class="multi-line-text-subscribe">Film Baru</p>
-                    <p class="multi-line-text-new-movie">Laugh Tate</p>
-                    <span class="notification-date">2 Hari Yang Lalu</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="d-flex nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-user user-icon"></i>
-            </a>
-            <ul class="dropdown-menu user-info">
-              <li><a class="dropdown-item user-info-item" href="overview-account.html"><i class="fa-solid fa-circle-user"></i> Profile Setting</a></li>
-              <li><a class="dropdown-item user-info-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
-            </ul>
-          </li>
+          <ul class="nav-icon d-flex pt-3">
+            <li class="dropdown me-3">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bell bell-icon"></i>
+              </a>
+              <ul class="dropdown-menu notification">
+                <li>
+                  <a class="dropdown-item notification-item" href="#">
+                    <img class="time-subscribe" src="assets/img/Clock.png" alt="">
+                    <div class="notification-content">
+                      <p class="multi-line-text-subscribe">Subscribe Premium<br>Telah Habis!</p>
+                      <span class="notification-date">Hari Ini</span>
+                    </div>
+                  </a>
+                </li>                                         
+                <li>
+                  <a class="dropdown-item notification-item" href="#">
+                    <img class="time-subscribe" src="assets/img/Kingkong.png" alt="">
+                    <div class="notification-content">
+                      <p class="multi-line-text-subscribe">Film Baru</p>
+                      <p class="multi-line-text-new-movie">Khong Guan Super</p>
+                      <span class="notification-date">1 Hari Yang Lalu</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item notification-item" href="#">
+                    <img class="time-subscribe" src="assets/img/Blackhat.png" alt="">
+                    <div class="notification-content">
+                      <p class="multi-line-text-subscribe">Film Baru</p>
+                      <p class="multi-line-text-new-movie">Black Hat</p>
+                      <span class="notification-date">2 Hari Yang Lalu</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item notification-item" href="#">
+                    <img class="time-subscribe" src="assets/img/Kingkong.png" alt="">
+                    <div class="notification-content">
+                      <p class="multi-line-text-subscribe">Film Baru</p>
+                      <p class="multi-line-text-new-movie">Laugh Tate</p>
+                      <span class="notification-date">2 Hari Yang Lalu</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-user user-icon"></i>
+              </a>
+              <ul class="dropdown-menu user-info">
+                <li><a class="dropdown-item user-info-item" href="overview-account.html"><i class="fa-solid fa-circle-user"></i> Profile Setting</a></li>
+                <li><a class="dropdown-item user-info-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <div class="jumbotron">
-      <h1 class="display-4 jumbotron-title">All New Simba</h1>
-      <img class="jumbotron-img" src="assets/img/Jumbotron-img.png" alt="">
-      <p class="lead">
-        Simba adalah anak sebatang kara yang sedang mencari orang tuanya
-        tetapi usaha nya terbatas. Mampukah simba menemukan orang tuanya ?
-      </p>
-      <a class="btn btn-primary btn-play btn-lg" href="#" role="button">Play</a>
+
+    <div class="container-fluid section-jumbotron">
+      <div class="jumbotron">
+        <div class="jumbotron-content">
+          <div class="row align-items-center">
+            <div class="col-md-5 col-7">
+              <div class="ms-4 py-4">
+                <h1 class="display-4 jumbotron-title">All New Simba</h1>
+                <p class="lead">
+                  Simba adalah anak sebatang kara yang sedang mencari orang tuanya
+                  tetapi usaha nya terbatas. Mampukah simba menemukan orang tuanya ?
+                </p>
+                <a class="btn btn-primary btn-play btn-md-lg" href="#" role="button">Play</a>
+              </div>
+            </div>
+            <div class="col-md-7 col-5 jumbotron-img">
+              <div class="jumbotron-layer"></div>
+              <img src="assets/img/Jumbotron-img.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <h3 class="new-added-title">New Added</h3>
     <section>
@@ -135,7 +152,7 @@
           <!-- Slides -->
           <div class="swiper-slide">
             <div class="card">
-              <img src="assets/img/Trex.png" class="card-img-top" alt="...">
+              <img src="assets/img/Trex.png" class="img-fluid h-100" alt="...">
               <span class="badge rounded-pill text-bg-dark badge-rating">
                 <img class="star-rating" src="assets/img/star-rating.png" alt="">
                 (8,3)
@@ -144,7 +161,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <img src="assets/img/Foundation.png" class="card-img-top" alt="...">
+              <img src="assets/img/Foundation.png" class="img-fluid h-100" alt="...">
               <span class="badge rounded-pill text-bg-dark badge-rating">
                 <img class="star-rating" src="assets/img/star-rating.png" alt="">
                 (8,3)
@@ -153,7 +170,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <img src="assets/img/Godzilla Kingkong.png" class="card-img-top" alt="...">
+              <img src="assets/img/Godzilla Kingkong.png" class="img-fluid h-100" alt="...">
               <span class="badge rounded-pill text-bg-dark badge-rating">
                 <img class="star-rating" src="assets/img/star-rating.png" alt="">
                 (8,3)
@@ -162,7 +179,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <img src="assets/img/Lowlifes.png" class="card-img-top" alt="...">
+              <img src="assets/img/Lowlifes.png" class="img-fluid h-100" alt="...">
               <span class="badge rounded-pill text-bg-dark badge-rating">
                 <img class="star-rating" src="assets/img/star-rating.png" alt="">
                 (8,3)
@@ -171,7 +188,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <img src="assets/img/Boy.png" class="card-img-top" alt="...">
+              <img src="assets/img/Boy.png" class="img-fluid h-100" alt="...">
               <span class="badge rounded-pill text-bg-dark badge-rating">
                 <img class="star-rating" src="assets/img/star-rating.png" alt="">
                 (8,3)
@@ -180,7 +197,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <img src="assets/img/Fights.png" class="card-img-top" alt="...">
+              <img src="assets/img/Fights.png" class="img-fluid h-100" alt="...">
               <span class="badge rounded-pill text-bg-dark badge-rating">
                 <img class="star-rating" src="assets/img/star-rating.png" alt="">
                 (8,3)
@@ -207,7 +224,7 @@
           <!-- Slides -->
           <div class="swiper-slide">
             <div class="card">
-              <img src="assets/img/Trex.png" class="card-img-top" alt="...">
+              <img src="assets/img/Trex.png" class="img-fluid h-100" alt="...">
               <span class="badge rounded-pill text-bg-dark badge-rating">
                 <img class="star-rating" src="assets/img/star-rating.png" alt="">
                 (8,3)
@@ -216,7 +233,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <img src="assets/img/Foundation.png" class="card-img-top" alt="...">
+              <img src="assets/img/Foundation.png" class="img-fluid h-100" alt="...">
               <span class="badge rounded-pill text-bg-dark badge-rating">
                 <img class="star-rating" src="assets/img/star-rating.png" alt="">
                 (8,3)
@@ -225,7 +242,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <img src="assets/img/Godzilla Kingkong.png" class="card-img-top" alt="...">
+              <img src="assets/img/Godzilla Kingkong.png" class="img-fluid h-100" alt="...">
               <span class="badge rounded-pill text-bg-dark badge-rating">
                 <img class="star-rating" src="assets/img/star-rating.png" alt="">
                 (8,3)
@@ -234,7 +251,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <img src="assets/img/Lowlifes.png" class="card-img-top" alt="...">
+              <img src="assets/img/Lowlifes.png" class="img-fluid h-100" alt="...">
               <span class="badge rounded-pill text-bg-dark badge-rating">
                 <img class="star-rating" src="assets/img/star-rating.png" alt="">
                 (8,3)
@@ -243,7 +260,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <img src="assets/img/Boy.png" class="card-img-top" alt="...">
+              <img src="assets/img/Boy.png" class="img-fluid h-100" alt="...">
               <span class="badge rounded-pill text-bg-dark badge-rating">
                 <img class="star-rating" src="assets/img/star-rating.png" alt="">
                 (8,3)
@@ -252,7 +269,7 @@
           </div>
           <div class="swiper-slide">
             <div class="card">
-              <img src="assets/img/Fights.png" class="card-img-top" alt="...">
+              <img src="assets/img/Fights.png" class="img-fluid h-100" alt="...">
               <span class="badge rounded-pill text-bg-dark badge-rating">
                 <img class="star-rating" src="assets/img/star-rating.png" alt="">
                 (8,3)
@@ -272,7 +289,7 @@
       </div>
     </section>
     <footer>
-      <div class="col-md-12 col-lg-10 mt-2 text-white">
+      <div class="text-center text-white">
           <p class="footer-title">&copy; <script>document.write(new Date().getFullYear());</script> CODEPOLITAN. All rights reserved.</p>
       </div>
     </footer>
@@ -282,7 +299,7 @@
       const swiper = new Swiper('.swiper', {
         speed: 400,
         spaceBetween: 10,
-        slidesPerView: 5,
+        // slidesPerView: 5,
         autoplay: {
           delay: 3000,  // Mengatur jeda antar slide dalam milidetik (3 detik)
           disableOnInteraction: false,  // Swiper akan tetap autoplay meskipun pengguna berinteraksi dengan slide
@@ -295,6 +312,20 @@
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          325: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
         },
       });
     </script>

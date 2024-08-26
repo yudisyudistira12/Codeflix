@@ -2,6 +2,8 @@ body, html {
     background-color: #132029;
     height: 100%;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 @font-face {
@@ -64,10 +66,6 @@ body, html {
     background-color: transparent;
 }
 
-.d-flex {
-    margin-left: 100px;
-}
-
 .search-box {
     width: 403px;
     height: auto;
@@ -98,13 +96,11 @@ body, html {
 
 .bell-icon {
     color: #fff;
-    margin-left: -20px;
     margin-top: 0.5rem;
 }
 
 .user-icon {
     color: #fff;
-    margin-left: -70px;
     margin-top: 0.5rem;
 }
 
@@ -145,35 +141,47 @@ body, html {
     color: #1ABC9C;
 }
 
+.section-jumbotron {
+    padding: 0px 70px;
+}
 
 
 .jumbotron {
-    width: 1555px;
-    height: 500px;
-    margin-left: 75px;
+    width: 100%;
     margin-top: 100px;
-    background: linear-gradient(to top, rgba(20, 42, 54, 1) 100%, rgba(20, 42, 54, 0) 0%);
-    border-radius: 20px;
+    background: rgba(20, 42, 54);
     position: relative;
-    overflow: hidden; /* Pastikan elemen lain tidak mempengaruhi layout */
+    z-index: 1;
 }
+.jumbotron-layer{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right, 
+    rgba(20, 42, 54, .9) 10%, 
+    transparent 90%);
+    border-radius: 20px;  
 
+}
+.jumbotron-content{
+    z-index: 999;
+    position: relative;
+}
+.jumbotron-img{
+    position: relative;
+    z-index: 8;
+    top: 0;
+}
 
 
 .jumbotron-title {
     color: #fff;
     font-family: "Kanit", sans-serif;
     font-weight: 600;
-    font-size: 70px;
-    margin-left: 4rem;
-    margin-top: 8rem; /* Ubah nilai ini untuk menurunkan posisi */
-}
-
-.jumbotron-img {
-    width: 731px;
-    height: 500px;
-    float: right;
-    margin-top: -220px;
+    font-size: 65px;
 }
 
 .lead {
@@ -181,16 +189,13 @@ body, html {
     font-weight: 100;
     font-size: 18px;
     color: #fff;
-    width: 390px;
-    height: 105px;
-    margin-left: 60px;
     margin-top: 2rem;
+    max-width: 400px;
 }
 
 .btn-play {
     width: 284px;
     border-radius: 10px;
-    margin-left: 60px;
     background-color: #1ABC9C;
     border: 1px solid #1ABC9C;
 }
@@ -209,24 +214,37 @@ body, html {
     margin-top: 2rem;
 }
 
+.category-title {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    margin-left: 155px;
+    color: #fff;
+    margin-top: 8rem;
+}
+
 
 .card {
-    width: 205px;
+    max-width: 205px;
+    /* width: 100%; */
     height: 308px;
     border-radius: 20px;
     border: none;
-    margin: 0.5em;
-    
+    margin: 0;
+    position: relative;
 }
 
 .badge-rating {
     width: 80px;
-    margin-top: -300px;
+    /* margin-top: -300px; */
+    /* margin-left: 1rem; */
     border-radius: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    margin-left: 1rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .star-rating {
@@ -321,7 +339,8 @@ section {
 
   .breadcrumb{
     margin-left: 6rem;
-    margin-top: 1rem;
+    margin-top: 7rem;
+    background: transparent;
   }
 
   .breadcrumb-link-home {
@@ -339,6 +358,10 @@ section {
     font-family: "Montserrat", sans-serif;
   }
 
+  .breadcrumb-item+.breadcrumb-item::before{
+    color: #1ABC9C;
+  }
+
   .container-movie {
     background-color: #142A36;
     border-radius: 20px;
@@ -351,7 +374,7 @@ section {
     width: 222px;
     height: auto;
     margin-top: 1rem;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
   }
 
   .movie-title {
@@ -359,7 +382,7 @@ section {
     font-weight: 600;
     font-family: "Kanit", sans-serif;
     color: #fff;
-    margin-left: -150px;
+    /* margin-left: -150px; */
     margin-top: 2rem;
   }
 
@@ -368,7 +391,7 @@ section {
     font-family: "Kanit", sans-serif;
     font-size: 22px;
     font-weight: 400;
-    margin-left: -150px;
+    /* margin-left: -150px; */
   }
 
   .dash {
@@ -381,7 +404,7 @@ section {
     font-family: "Kanit", sans-serif;
     font-size: 22px;
     font-weight: 400;
-    margin-left: 8px;
+    /* margin-left: 8px; */
   }
 
   .prolog-movie {
@@ -389,9 +412,9 @@ section {
     font-weight: 100;
     font-size: 18px;
     color: #fff;
-    width: 390px;
+    /* width: 450px; */
     height: 105px;
-    margin-left: -150px;
+    /* margin-left: -150px; */
     margin-top: 2rem;
   }
 
@@ -404,16 +427,17 @@ section {
   }
 
   .badge-category {
-    margin-left: -150px;
+    /* margin-left: -150px; */
   }
 
   .rectangle-rating {
-    width: 323px;
-    height: 104px;
+    max-width: max-content;
     border-radius: 10px;
     background-color: #132029;
     margin-top: 1rem;
-    margin-left: 7rem;
+    /* margin-left: 2rem; */
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .rating-movie {
@@ -421,16 +445,19 @@ section {
     font-weight: 600;
     font-size: 18px;
     color: #fff;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
+    text-align: left;
+    padding: 10px 1px;
   }
 
   .star {
-    margin-left: 0.8rem;
+    /* margin-left: 1rem; */
+    margin-top: -10px;
   }
 
   .star-ratings {
     color: #FFC807;
-    width: 25px;
+    font-size: 22px;
   }
 
   .average-rating {
@@ -438,7 +465,8 @@ section {
     color: #fff;
     font-weight: 200;
     font-size: 20px;
-    margin-left: 15rem;
+    /* margin-left: 20.5rem; */
+    text-align: right;
   }
 
   .per {
@@ -451,10 +479,10 @@ section {
   .director-movie {
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    /* margin-left: 1rem; */
+    margin-top: 2rem;
     display: inline-block;
   }
 
@@ -468,32 +496,33 @@ section {
 
   .movie-info {
     display: flex;
-    align-items: center;
+}
+
+.movie-info-detail {
+    max-width: 400px;
+    text-align: left;
 }
 
 .writters-movie {
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    /* margin-left: 2rem; */
 }
 
 .writters-movie-name{
     color: #1ABC9C;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    margin-top: 1rem;
-    margin-left: 35px;
+    margin-left: 2.2rem;
 }
 
 .star-movie-name{
     color: #1ABC9C;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    margin-top: 1rem;
-    margin-left: 65px;
+    margin-left: 4.2rem;
 }
 
 .ratio {
@@ -504,7 +533,8 @@ section {
 
 
 .badge-frame-video {
-    margin-left: 2rem;
+    margin-left: 3%;
+    margin-right: 3%;
     margin-top: 1rem;
 }
 
@@ -515,12 +545,6 @@ section {
     font-family: "Montserrat", sans-serif;
 }
 
-.badge-frame-video-tools {
-    border: 1px solid #1ABC9C;
-    font-weight: 100;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-}
 
 .badge-frame-video-rating {
     border: 1px solid #1ABC9C;
@@ -544,6 +568,7 @@ section {
 .container-info {
     background: transparent;
     height: auto;
+    flex-grow: 1;
 }
 
 .sidebar-left {
@@ -552,7 +577,7 @@ section {
     border-radius: 21px;
     background: #142A36;
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-left: 5rem;
 }
 
@@ -584,16 +609,19 @@ section {
 }
 
 .card-image-movie-list {
-    width: 205px;
-    height: 308px   ;
+    /* width: 205px;
+    height: 308px; */
+    width: 100%;
+    height: 100%;
 }
 
 .card-movie-list {
-    margin: 50px 10rem 0px 130px;
+    /* margin: 50px 20rem 0px 200px; */
+    margin: 50px 100px;
 }
 
 .load-more {
-    margin-left: 52rem;
+    /* margin-left: 52rem; */
     border: 1px solid #1ABC9C;
     color: #fff;
     width: 233px;
@@ -621,7 +649,7 @@ section {
     font-family: "Montserrat", sans-serif;
     color: #1ABC9C;
     margin-left: 1rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .overview-subtitle {
@@ -700,6 +728,8 @@ section {
     font-size: 18px;
     font-weight: 600;
     color: #1ABC9C;
+    margin-left: 62rem;
+    margin-top: -30px;
 }
 
 .manage-membership:hover {
@@ -894,95 +924,79 @@ border: 1px solid #1ABC9C;
     font-size: 22px;
 }
 
+
 .btn-delete-account:hover{
     background-color: #fff;
     border: 3px solid #1ABC9C;
     color: #1ABC9C;
 }
 
-
-
-
-
-
-
-
-
 footer{
     background-color: #142A36;
-    margin-top: 17rem;
 }
 
 .footer-title {
-    margin-left: 55rem;
+    /* margin-left: 48rem; */
+    padding-top: 1rem;
     font-size: 16px;
     font-weight: 600;
 }
 
-@media (max-width: 767px) {    
-    .navbar-icon {
-        display: none;
+.col-md-5{
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+@media (max-width: 767px) {
+    .search-box {
+        width: 100%;
+        /* margin-left: -100px; */
     }
-    
+
+    .nav-icon .dropdown-menu.show{
+        right: 0;
+        margin: auto;
+    }
+
+    .jumbotron-title {
+        font-size: 12px;
+    }
+    .lead{
+        font-size: 8px;
+        margin-top: 0;
+    }
+    .btn-play {
+        width: auto;
+        border-radius: 10px;
+        margin-left: 0;
+        padding: 4px 40px;
+        font-size: 10px;
+    }
+
+    .card{
+        height: 250px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        background-color: #132029;
+        border: 1px solid #1ABC9C;
+        border-radius: 20px;
+        width: 97%;
+    }
+
+    .navbar-nav .dropdown-item {
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
     .navbar-nav .dropdown-toggle {
         color: #fff;
         font-family: "Montserrat", sans-serif;
         font-size: 14px;
     }
-    
-    .navbar-nav .dropdown-toggle:focus, 
-    .navbar-nav .dropdown-toggle:hover {
-        color: #fff;
-    }
-    
-    .navbar-nav .dropdown-menu {
-        background-color: #132029;
-        border: 1px solid #1ABC9C;
-        border-radius: 20px;
-        width: 150px;
-    }
-    
-    .kategori-dropdown .dropdown-menu ul {
-        list-style: none;
-        padding: 0;
-    }
-    
-    .kategori-dropdown .dropdown-menu.show{
-        display: flex;
-    }
-    
-    .navbar-nav .dropdown-item {
-        color: #fff;
-        font-family: "Montserrat", sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-    }
-    
-    .navbar-nav .dropdown-item:hover, 
-    .navbar-nav .dropdown-item:focus {
-        color: #1ABC9C;
-        background-color: transparent;
-    }
-    
-    .d-flex {
-        margin-left: -50px;
-    }
-    
-    .search-box {
-        width: 150px;
-        height: auto;
-        border-radius: 50px;
-        background-color: #132029;
-        border: none;
-        margin-left: -100px;
-    }
-    
-    .search-box:focus {
-        color: #fff;
-        background-color: transparent;
-        border: 1px solid #1ABC9C;
-    }
-    
+
     .search-box::placeholder {
         color: #455D6A;
         opacity: 1;
@@ -990,223 +1004,179 @@ footer{
         font-weight: 400;
         font-size: 14px;
     }
-    
-    .search-icon {
-        margin-left: -50px;
-        margin-top: 0.6rem;
-        color: #fff;
-    }
-    
-    .bell-icon {
-        color: #fff;
-        margin-left: -20px;
-        margin-top: 0.5rem;
-    }
-    
-    .user-icon {
-        color: #fff;
-        margin-left: -70px;
-        margin-top: 0.5rem;
-    }
-    
-    
-    .dropdown-menu.notification {
-        background-color: #132029;
-        margin-left: -200px;
-        border: 1px solid #1ABC9C;
-        width:250px;
-        height: auto;
-    }
-    
-    .dropdown-item.notification-item{
-        color: #1ABC9C;
-    }
-    
-    .dropdown-item.notification-item:hover{
-        background-color: transparent;
-        color: #fff;
-    }
-    
-    .dropdown-menu.user-info {
-        background-color: #132029;
-        margin-left: -170px;
-        border: 1px solid #1ABC9C;
-    }
-    
-    .dropdown-item.user-info-item{
-        font-family: "Montserrat", sans-serif;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 400;
-    }
-    
-    
-    .dropdown-item.user-info-item:hover{
-        background-color: transparent;
-        color: #1ABC9C;
-    }
-    
-    
-    
-    .jumbotron {
-        width: 100px;
-        height: 500px;
-        margin-left: 75px;
-        margin-top: 100px;
-        background: linear-gradient(to top, rgba(20, 42, 54, 1) 100%, rgba(20, 42, 54, 0) 0%);
-        border-radius: 20px;
-        position: relative;
-        overflow: hidden; /* Pastikan elemen lain tidak mempengaruhi layout */
-    }
-    
-    
-    
-    .jumbotron-title {
-        color: #fff;
-        font-family: "Kanit", sans-serif;
-        font-weight: 600;
-        font-size: 70px;
-        margin-left: 4rem;
-        margin-top: 8rem; /* Ubah nilai ini untuk menurunkan posisi */
-    }
-    
-    .jumbotron-img {
-        width: 731px;
-        height: 500px;
-        float: right;
-        margin-top: -220px;
-    }
-    
-    .lead {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 100;
-        font-size: 18px;
-        color: #fff;
-        width: 390px;
-        height: 105px;
-        margin-left: 60px;
-        margin-top: 2rem;
-    }
-    
-    .btn-play {
-        width: 284px;
-        border-radius: 10px;
-        margin-left: 60px;
-        background-color: #1ABC9C;
-        border: 1px solid #1ABC9C;
-    }
-    
-    .btn-play:hover{
-        background-color: transparent;
-        border: 1px solid #1ABC9C;
-    }
-    
+
     .new-added-title {
         font-family: "Kanit", sans-serif;
         font-weight: 600;
-        font-size: 28px;
-        margin-left: 155px;
+        font-size: 18px;
+        color: #fff;
+        text-align: left;
+    }
+
+    .section-jumbotron {
+        padding: 10px 20px;
+    }
+
+    .card-movie-list {
+        margin: 50px 10px;
+    }
+
+    .col-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .category-title {
+        font-family: "Kanit", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        margin-left: 30px;
+        color: #fff;
+        margin-top: 8rem;
+    }
+
+    .container-movie {
+        background-color: #142A36;
+        border-radius: 20px;
+        width: 330px;
+        height: auto;
+        margin-left: 1.5rem;
+    }
+
+    .thumbnail-movie {
+        width: 100px;
+        height: auto;
+        margin-top: 1rem;
+        
+    }
+
+    .movie-title {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Kanit", sans-serif;
         color: #fff;
         margin-top: 2rem;
     }
-    
-    
-    .card {
-        width: 205px;
-        height: 308px;
-        border-radius: 20px;
-        border: none;
-        margin: 0.5em;
-    }
-    
-    .badge-rating {
-        width: 80px;
-        margin-top: -300px;
-        border-radius: 10px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        margin-left: 1rem;
-    }
-    
-    .star-rating {
-        width: 15px;
-    }
-    
-    /* Pastikan elemen <a> menggunakan Flexbox */
-    .notification-item {
-        display: flex;
-        align-items: center; /* Untuk mengatur elemen dalam satu baris vertikal sejajar */
-        padding: 10px; /* Menambah padding untuk memberi ruang antara teks dan tepi elemen */
-        text-decoration: none; /* Menghapus underline pada link */
-      }
-      
-      .notification-item img.time-subscribe {
-        margin-right: 10px; /* Menambahkan jarak antara gambar dan teks */
-        width: 70px; /* Sesuaikan ukuran gambar */
-        height: auto; /* Sesuaikan ukuran gambar */
-      }
-      
-      .notification-item p {
-        text-align: left;
-        color: #1ABC9C; /* Mengatur warna teks */
-        font-size: 14px; /* Mengatur ukuran font */
-        font-weight: 600;
-        font-family: "Kanit", sans-serif;
-      }
-      
-      .notification-item {
-        display: flex;
-        align-items: center;
-      }
-      
-      .notification-content {
-        display: flex;
-        flex-direction: column; /* Mengatur konten dalam kolom */
-        margin-left: 10px; /* Memberi jarak antara gambar dan teks */
-      }
-      
-      .multi-line-text-subscribe {
-        margin: 0; /* Menghilangkan margin default */
-        color: #1ABC9C; /* Mengatur warna teks */
-        font-size: 14px; /* Mengatur ukuran font */
-        font-weight: 600;
-        font-family: "Kanit", sans-serif;
+
+    .breadcrumb{
+        margin-left: 2rem;
+        margin-top: 7rem;
+        background: transparent;
       }
     
-      .multi-line-text-subscribe:hover {
+      .breadcrumb-link-home {
+        text-decoration: none;
         color: #fff;
-      }
-    
-      .multi-line-text-new-movie {
-        margin: 0; /* Menghilangkan margin default */
-        color: #fff; /* Mengatur warna teks */
-        font-size: 14px; /* Mengatur ukuran font */
+        font-size: 18px;
         font-weight: 600;
-        font-family: "Kanit", sans-serif;
+        font-family: "Montserrat", sans-serif;
       }
     
-      .multi-line-text-subscribe:hover {
+      .breadcrumb-item.active{
+        color: #1ABC9C;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+      }
+    
+      .breadcrumb-item+.breadcrumb-item::before{
         color: #1ABC9C;
       }
-      
-      .notification-date {
-        margin-top: 5px; /* Memberi sedikit jarak antara teks utama dan tanggal */
-        font-size: 12px; /* Ukuran font lebih kecil untuk tanggal */
-        color: #aaa; /* Warna teks untuk tanggal */
-      }
-      
-      
-    
-    footer{
-        background-color: #142A36;
+
+      .prolog-movie {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+        color: #fff;
+        /* width: 450px; */
+        height: 105px;
+        /* margin-left: -150px; */
+        margin-top: 2rem;
     }
-    
-    .footer-title {
-        margin-left: 45rem;
+
+    .rating-movie {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        color: #fff;
+        /* margin-left: 1rem; */
+        text-align: left;
+        padding: 10px 1px;
+    }
+
+    .average-rating {
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        font-weight: 200;
+        font-size: 18px;
+        /* margin-left: 20.5rem; */
+        text-align: right;
+    }
+
+    .director-movie {
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
         font-size: 16px;
         font-weight: 600;
+        /* margin-left: 1rem; */
+        margin-top: 2rem;
+        display: inline-block;
+      }
+    
+      .director-movie-name {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        display: inline-block;
+        color: #1ABC9C;
+        margin-left: 2rem;
     }
+
+    .writters-movie {
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        /* margin-left: 2rem; */
+    }
+    
+    .writters-movie-name{
+        color: #1ABC9C;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        margin-left: 2.2rem;
+    }
+    
+    .star-movie-name{
+        color: #1ABC9C;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        margin-left: 4.2rem;
+    }
+
+    .ratio {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    .badge-frame-video-tools {
+        border: 1px solid #1ABC9C;
+        font-weight: 100;
+        font-size: 10px;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    
+    .badge-frame-video-rating {
+        border: 1px solid #1ABC9C;
+        font-weight: unset;
+        font-size: 10px;
+        font-family: "Montserrat", sans-serif;
+        float: unset;
+        height: max-content;
+    }
+
+    
 }
 
 
