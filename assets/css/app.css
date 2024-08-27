@@ -577,7 +577,7 @@ section {
     border-radius: 21px;
     background: #142A36;
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
-    margin-top: 5rem;
+    margin-top: 7rem;
     margin-left: 5rem;
 }
 
@@ -618,6 +618,12 @@ section {
 .card-movie-list {
     /* margin: 50px 20rem 0px 200px; */
     margin: 50px 100px;
+}
+
+.cards-plan-list {
+    /* margin: 50px 20rem 0px 200px; */
+    margin: 50px 50px;
+    gap: 5rem;
 }
 
 .load-more {
@@ -686,6 +692,14 @@ section {
     width: 300px;
 }
 
+.overview-plan-description {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 2rem;
+    max-width: max-content;;
+}
+
 .overview-plan-membership {
     color: #fff;
     font-size: 18px;
@@ -736,6 +750,42 @@ section {
     color: #fff;
 }
 
+.arrow {
+    /* margin-top: -120rem; */
+    font-size: 16px;
+    color: #1ABC9C;
+}
+.arrow-payment {
+    margin-top: -30px;
+}
+
+.manage-plan {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1ABC9C;
+    margin-left: 66rem;
+    margin-top: -30px;
+}
+
+.manage-plan:hover {
+    color: #fff;
+}
+
+.rectangle-plan-membership{
+    width: 1200px;
+    height: auto;
+    border-radius: 20px;
+    background-color: #142A36;
+    margin-left: 1rem;
+    margin-top: -40px;
+    /* padding-top: 10px; */
+}
+
+.planning-member {
+    display: none;
+}
+
 .contact-info {
     font-family: "Montserrat", sans-serif;
     color: #fff;
@@ -746,6 +796,14 @@ section {
 }
 
 .label-full-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 3.5rem;
+}
+
+.label-full-name-checkout {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -770,6 +828,24 @@ section {
     border: 1px solid #1ABC9C;
 }
 
+.form-full-name-checkout {
+    width: 1050px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #1ABC9C;
+    margin-left: 3.5rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.form-full-name-checkout:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
 .form-email {
     width: 700px;
     height: 50px;
@@ -782,6 +858,24 @@ section {
 }
 
 .form-email:focus {
+color: #fff;
+background-color: transparent;
+border: 1px solid #1ABC9C;
+}
+
+.form-email-checkout {
+    width: 1050px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #1ABC9C;
+    margin-left: 3.5rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.form-email-checkout:focus {
 color: #fff;
 background-color: transparent;
 border: 1px solid #1ABC9C;
@@ -802,6 +896,24 @@ border: 1px solid #1ABC9C;
 color: #fff;
 background-color: transparent;
 border: 1px solid #1ABC9C;
+}
+
+.form-phone-number-checkout {
+    width: 1050px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #1ABC9C;
+    margin-left: 3.5rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.form-phone-number-checkout:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
 }
 
 .form-address {
@@ -947,6 +1059,116 @@ footer{
     width: 20%;
 }
 
+.card-plan {
+    width: 300px;
+    height: auto;
+    border: 2px solid #1ABC9C;
+    border-radius: 10px;
+}
+
+.btn-plan {
+    text-align: left;
+    background-color: transparent;
+    width: 300px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid #1ABC9C;
+}
+
+.plan-detail-days {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1ABC9C;
+}
+
+.btn-plan:hover {
+    border: 2px solid #1ABC9C;
+    background-color: #1ABC9C;
+    color: #fff;
+}
+
+.btn-plan:focus {
+    border: 2px solid #1ABC9C;
+    background-color: #1ABC9C;
+    color: #fff;
+}
+
+.plan-detail-days:hover {
+    color: #fff;
+}
+
+.plan-detail-days:focus{
+    color: #fff;
+}
+
+.resolution-title {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.resolution {
+    color: #1ABC9C;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    margin-left: 1rem;
+}
+
+.line-plan-card {
+    border-bottom: 4px solid #3c5664;
+    margin-top: 10px;
+    width: 211px;
+    margin-left: 1rem;
+    margin-top: 5px;
+}
+
+.rectangle-payment-details {
+    width: 1050px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #132029;
+    margin-left: 3.5rem;
+}
+
+.membership-selected-package {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.form-check {
+    margin-left: 1rem;
+}
+
+.form-check-label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+.text-term {
+    color: #1ABC9C;
+}
+
+.btn-continue {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #1ABC9C;
+    color: #132029;
+    margin-left: 34rem;
+}
+
 @media (max-width: 767px) {
     .search-box {
         width: 100%;
@@ -1018,8 +1240,9 @@ footer{
     }
 
     .card-movie-list {
-        margin: 50px 10px;
+        margin: 10px 20px;
     }
+
 
     .col-6 {
         flex: 0 0 auto;
@@ -1174,6 +1397,153 @@ footer{
         font-family: "Montserrat", sans-serif;
         float: unset;
         height: max-content;
+    }
+
+    .sidebar-left {
+        width: 330px;
+        border-radius: 21px;
+        background: #142A36;
+        box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 7rem;
+        margin-left: 2rem;
+    }
+
+    .group-profile {
+        color: #fff;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .overview-title {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        color: #1ABC9C;
+        margin-left: 3rem;
+        margin-top: 10px;
+    }
+
+    .overview-subtitle {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+        margin-left: 3rem;
+    }
+
+    .rectangle-overview{
+        width: 330px;
+        border-radius: 20px;
+        background-color: #142A36;
+        margin-left: 1rem;
+    }
+
+    .overview-plan {
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        color: #1ABC9C;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        width: 193px;
+    }
+
+    .overview-payment-date {
+        color: #fff;
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        margin-left: 2rem;
+        width: 300px;
+    }
+
+    .e-payment-vendor {
+        width: 54px;
+        height: auto;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .payment-number {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .contact-info {
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    .label-full-name {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        margin-left: 1rem;
+    }
+
+    .form-full-name {
+        width: 300px;
+        height: auto;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #1ABC9C;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .form-email {
+        width: 300px;
+        height: auto;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #1ABC9C;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .form-phone-number {
+        width: 300px;
+        height: auto;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #1ABC9C;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .form-address {
+        width: 300px;
+        height: auto;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #1ABC9C;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .btn-submit {
+        width: 100px;
+        height: auto;
+        border-radius: 5px;
+        background-color: #1ABC9C;
+        border: 1px solid #1ABC9C;
+        margin-left: 1rem;
     }
 
     
