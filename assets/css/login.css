@@ -16,18 +16,27 @@ body, html {
     src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
 }
 
+.bg-login{
+    background: url(../img/BgLogin.png);
+    background-size: 70% auto;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.bg-login .row{
+    height: 100vh;
+}
+
 .login-photo {
-    width: 1200px;
-    height: 780px;
-    margin-left: -10px;
+    width: 100%;
+    margin: 0;
     overflow: hidden;
 }
 
 .codeflix-title {
     width: 211px;
     height: 33px;
-    margin-left: -50px;
-    margin-top: 94px;
 }
 
 .codeflix-sign-in {
@@ -35,13 +44,21 @@ body, html {
     font-weight: 600;
     font-size: 42px;
     margin-top: 3rem;
-    margin-left: -10px;
     font-family: "Kanit", sans-serif;
 }
 
-.form {
-    margin-left: -200px;
+
+.f-email,
+.f-password{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
 }
+.f-email input:focus + label, 
+.f-password input:focus + label {
+    color: #1ABC9C!important;
+}
+
 
 .form-label-email {
     color: #fff;
@@ -51,7 +68,6 @@ body, html {
 }
 
 .form-email {
-    width: 493px;
     height: 50px;
     border-radius: 5px;
     background-color: transparent;
@@ -64,6 +80,14 @@ body, html {
     border: 1px solid #1ABC9C;
 }
 
+.toggle-password{
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    color: #808080;
+    cursor: pointer;
+}
+
 .form-label-password {
     color: #fff;
     font-family: "Kanit", sans-serif;
@@ -72,10 +96,10 @@ body, html {
 }
 
 .form-password {
-    width: 493px;
     height: 50px;
     border-radius: 5px;
     background-color: transparent;
+    color: #fff;
 }
 
 .form-password:focus {
@@ -92,7 +116,6 @@ body, html {
 }
 
 .forgot-password {
-    margin-left: 15.5rem;
     text-decoration: none;
     color: #1ABC9C;
     font-family: "Kanit", sans-serif;
@@ -101,7 +124,7 @@ body, html {
 }
 
 .btn-sign-in {
-    width: 490px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     background-color: #1ABC9C;
@@ -118,7 +141,7 @@ body, html {
 
 
 .btn-sign-google {
-    width: 490px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     background-color: transparent;
@@ -138,11 +161,9 @@ body, html {
     font-weight: 400;
     font-size: 16px;
     color: #fff;
-    margin-left: -150px;
 }
 
 .small{
-    margin-left: 0.2rem;
     text-decoration: none;
     font-size: 16px;
     color: #1ABC9C;
@@ -153,21 +174,9 @@ body, html {
         display: none;
     }
 
-    .codeflix-title {
-        margin-top: 7rem;
-        width: 250px;
-        height: auto;
-        margin-left: -110px;
-        display: block;
-    }
 
     .codeflix-sign-in {
         font-size: 30px;
-        margin-left: -40px;
-    }
-
-    .form {
-        margin-left: -220px;
     }
 
     .form-label-email, .form-label-password {
@@ -183,15 +192,13 @@ body, html {
         font-size: 14px;
     }
 
-    .forgot-password {
-        display: block;
-        margin-left: 290px;
-        margin-top: -20px;
-    }
-
     .register {
-        margin-left: 10px;
         margin-top: 5rem;
     }
 }
 
+@media (max-width: 460px) {
+    .bg-login{
+        background-size: 100% auto;
+    }
+}

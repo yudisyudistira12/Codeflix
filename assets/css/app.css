@@ -226,7 +226,6 @@ body, html {
 
 .card {
     max-width: 205px;
-    /* width: 100%; */
     height: 308px;
     border-radius: 20px;
     border: none;
@@ -236,8 +235,6 @@ body, html {
 
 .badge-rating {
     width: 80px;
-    /* margin-top: -300px; */
-    /* margin-left: 1rem; */
     border-radius: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -272,229 +269,211 @@ section {
     object-position: center;
 }
 
-
-
-/* Pastikan elemen <a> menggunakan Flexbox */
 .notification-item {
     display: flex;
-    align-items: center; /* Untuk mengatur elemen dalam satu baris vertikal sejajar */
-    padding: 10px; /* Menambah padding untuk memberi ruang antara teks dan tepi elemen */
-    text-decoration: none; /* Menghapus underline pada link */
-  }
-  
-  .notification-item img.time-subscribe {
-    margin-right: 10px; /* Menambahkan jarak antara gambar dan teks */
-    width: 70px; /* Sesuaikan ukuran gambar */
-    height: auto; /* Sesuaikan ukuran gambar */
-  }
-  
-  .notification-item p {
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.notification-item img.time-subscribe {
+    margin-right: 10px;
+    width: 70px;
+    height: auto;
+}
+
+.notification-item p {
     text-align: left;
-    color: #1ABC9C; /* Mengatur warna teks */
-    font-size: 14px; /* Mengatur ukuran font */
+    color: #1ABC9C;
+    font-size: 14px;
     font-weight: 600;
     font-family: "Kanit", sans-serif;
-  }
-  
-  .notification-item {
+}
+
+.notification-item {
     display: flex;
     align-items: center;
-  }
-  
-  .notification-content {
+}
+
+.notification-content {
     display: flex;
-    flex-direction: column; /* Mengatur konten dalam kolom */
-    margin-left: 10px; /* Memberi jarak antara gambar dan teks */
-  }
-  
-  .multi-line-text-subscribe {
-    margin: 0; /* Menghilangkan margin default */
-    color: #1ABC9C; /* Mengatur warna teks */
-    font-size: 14px; /* Mengatur ukuran font */
+    flex-direction: column;
+    margin-left: 10px;
+}
+.multi-line-text-subscribe {
+    margin: 0;
+    color: #1ABC9C; 
+    font-size: 14px;
     font-weight: 600;
     font-family: "Kanit", sans-serif;
-  }
+}
 
-  .multi-line-text-subscribe:hover {
+.multi-line-text-subscribe:hover {
     color: #fff;
-  }
+}
 
-  .multi-line-text-new-movie {
-    margin: 0; /* Menghilangkan margin default */
-    color: #fff; /* Mengatur warna teks */
-    font-size: 14px; /* Mengatur ukuran font */
+.multi-line-text-new-movie {
+    margin: 0; 
+    color: #fff;
+    font-size: 14px;
     font-weight: 600;
     font-family: "Kanit", sans-serif;
-  }
+}
 
-  .multi-line-text-subscribe:hover {
+.multi-line-text-subscribe:hover {
     color: #1ABC9C;
-  }
-  
-  .notification-date {
-    margin-top: 5px; /* Memberi sedikit jarak antara teks utama dan tanggal */
-    font-size: 12px; /* Ukuran font lebih kecil untuk tanggal */
-    color: #aaa; /* Warna teks untuk tanggal */
-  }
+}
 
-  .breadcrumb{
+.notification-date {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.breadcrumb{
     margin-left: 6rem;
     margin-top: 7rem;
     background: transparent;
-  }
+}
 
-  .breadcrumb-link-home {
+.breadcrumb-link-home {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
-  }
+}
 
-  .breadcrumb-item.active{
+.breadcrumb-item.active{
     color: #1ABC9C;
     font-size: 18px;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
-  }
+}
 
-  .breadcrumb-item+.breadcrumb-item::before{
+.breadcrumb-item+.breadcrumb-item::before{
     color: #1ABC9C;
-  }
+}
 
-  .container-movie {
+.container-movie {
     background-color: #142A36;
     border-radius: 20px;
-    width: 1500px;
-    height: auto;
-    margin-left: 6rem;
-  }
+    margin: 0 64px;
+}
 
-  .thumbnail-movie {
+.thumbnail-movie {
     width: 222px;
     height: auto;
     margin-top: 1rem;
-    /* margin-left: 2rem; */
-  }
+}
 
-  .movie-title {
+.movie-title {
     font-size: 46px;
     font-weight: 600;
     font-family: "Kanit", sans-serif;
     color: #fff;
-    /* margin-left: -150px; */
     margin-top: 2rem;
-  }
+}
 
-  .year-movie {
+.year-movie {
     color: #1ABC9C;
     font-family: "Kanit", sans-serif;
     font-size: 22px;
     font-weight: 400;
-    /* margin-left: -150px; */
-  }
+}
 
-  .dash {
+.dash {
     color: #1ABC9C;
     font-size: 22px;
-  }
+}
 
-  .duration-movie {
+.duration-movie {
     color: #1ABC9C;
     font-family: "Kanit", sans-serif;
     font-size: 22px;
     font-weight: 400;
-    /* margin-left: 8px; */
-  }
+}
 
-  .prolog-movie {
+.prolog-movie {
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
     font-size: 18px;
     color: #fff;
-    /* width: 450px; */
     height: 105px;
-    /* margin-left: -150px; */
     margin-top: 2rem;
-  }
+}
 
-  .badge-category-movie {
+.badge-category-movie {
     border: 1px solid #fff;
     font-weight: 100;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     justify-content: space-between;
-  }
+}
 
-  .badge-category {
-    /* margin-left: -150px; */
-  }
 
-  .rectangle-rating {
-    max-width: max-content;
+.rectangle-rating {
+    width: 100%;
     border-radius: 10px;
     background-color: #132029;
     margin-top: 1rem;
-    /* margin-left: 2rem; */
+    margin: 1rem;
     padding-left: 20px;
     padding-right: 20px;
-  }
+}
 
-  .rating-movie {
+.rating-movie {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 18px;
     color: #fff;
-    /* margin-left: 1rem; */
     text-align: left;
     padding: 10px 1px;
-  }
+}
 
-  .star {
-    /* margin-left: 1rem; */
+.star {
+    text-align: left;
     margin-top: -10px;
-  }
+}
 
-  .star-ratings {
+.star-ratings {
     color: #FFC807;
-    font-size: 22px;
-  }
+    font-size: 29px;
+}
 
-  .average-rating {
+.average-rating {
     font-family: "Montserrat", sans-serif;
     color: #fff;
     font-weight: 200;
     font-size: 20px;
-    /* margin-left: 20.5rem; */
     text-align: right;
-  }
+}
 
-  .per {
+.per {
     font-family: "Montserrat", sans-serif;
     color: #455D6A;
     font-weight: 200;
     font-size: 18px;
-  }
+}
 
-  .director-movie {
+.director-movie {
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 600;
-    /* margin-left: 1rem; */
     margin-top: 2rem;
     display: inline-block;
-  }
+}
 
-  .director-movie-name {
+.director-movie-name {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     display: inline-block;
     color: #1ABC9C;
     margin-left: 2rem;
-  }
+}
 
-  .movie-info {
+.movie-info {
     display: flex;
 }
 
@@ -508,7 +487,6 @@ section {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 600;
-    /* margin-left: 2rem; */
 }
 
 .writters-movie-name{
@@ -526,15 +504,13 @@ section {
 }
 
 .ratio {
-    width: 1430px;
-    height: 565px;
-    margin-left: 2rem;
+    width: 100%;
 }
 
 
 .badge-frame-video {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 1rem;
 }
 
@@ -582,13 +558,15 @@ section {
 }
 
 .list-group{
-    margin-top: 1rem;
-    margin-left: 1rem;
+    background-color: #142A36;
+    border-radius: 20px;
+    padding: 25px;
 }
 
 .list-group-item{
     background-color: transparent;
     border: none;
+    margin-bottom: 10px;
 }
 
 .group-profile {
@@ -609,25 +587,20 @@ section {
 }
 
 .card-image-movie-list {
-    /* width: 205px;
-    height: 308px; */
     width: 100%;
     height: 100%;
 }
 
 .card-movie-list {
-    /* margin: 50px 20rem 0px 200px; */
     margin: 50px 100px;
 }
 
 .cards-plan-list {
-    /* margin: 50px 20rem 0px 200px; */
     margin: 50px 50px;
     gap: 5rem;
 }
 
 .load-more {
-    /* margin-left: 52rem; */
     border: 1px solid #1ABC9C;
     color: #fff;
     width: 233px;
@@ -645,8 +618,11 @@ section {
 }
 
 .column-rating {
-    border-left: 1px solid gray; 
+    border-left: 1px solid gray;
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .overview-title {
@@ -655,7 +631,6 @@ section {
     font-family: "Montserrat", sans-serif;
     color: #1ABC9C;
     margin-left: 1rem;
-    margin-top: 5rem;
 }
 
 .overview-subtitle {
@@ -666,8 +641,7 @@ section {
     margin-left: 1rem;
 }
 
-.rectangle-overview{
-    width: 1200px;
+.rectangle-overview {
     height: auto;
     border-radius: 20px;
     background-color: #142A36;
@@ -679,7 +653,7 @@ section {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color: #1ABC9C;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 1rem;
     width: 193px;
 }
@@ -688,7 +662,7 @@ section {
     color: #fff;
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
-    margin-left: 2rem;
+    margin-left: 1rem;
     width: 300px;
 }
 
@@ -711,12 +685,9 @@ section {
 .e-payment-vendor {
     width: 54px;
     height: auto;
-    margin-top: 1rem;
-    margin-left: 38rem;
 }
 
-.e-payment-number { 
-    margin-top: 2rem;
+.e-payment-number { /
     margin-left: -10px;
 }
 
@@ -734,7 +705,6 @@ section {
 
 .btn-manage-membership {
     text-decoration: none;
-    margin-left: 65rem;
 }
 
 .manage-membership {
@@ -742,8 +712,6 @@ section {
     font-size: 18px;
     font-weight: 600;
     color: #1ABC9C;
-    margin-left: 62rem;
-    margin-top: -30px;
 }
 
 .manage-membership:hover {
@@ -751,7 +719,6 @@ section {
 }
 
 .arrow {
-    /* margin-top: -120rem; */
     font-size: 16px;
     color: #1ABC9C;
 }
@@ -779,7 +746,6 @@ section {
     background-color: #142A36;
     margin-left: 1rem;
     margin-top: -40px;
-    /* padding-top: 10px; */
 }
 
 .planning-member {
@@ -797,7 +763,7 @@ section {
 
 .label-full-name {
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #fff;
     margin-left: 3.5rem;
@@ -812,14 +778,12 @@ section {
 }
 
 .form-full-name {
-    width: 700px;
-    height: 50px;
+    width: 95%;
+    height: 40px;
     border-radius: 5px;
     background-color: transparent;
     color: #fff;
     border: 1px solid #1ABC9C;
-    margin-left: 15rem;
-    margin-top: 1rem;
 }
 
 .form-full-name:focus {
@@ -846,85 +810,13 @@ section {
     border: 1px solid #1ABC9C;
 }
 
-.form-email {
-    width: 700px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #1ABC9C;
-    margin-left: 17.5rem;
-    margin-top: 1rem;
-}
-
-.form-email:focus {
-color: #fff;
-background-color: transparent;
-border: 1px solid #1ABC9C;
-}
-
-.form-email-checkout {
-    width: 1050px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #1ABC9C;
-    margin-left: 3.5rem;
-    margin-top: 1rem;
-    display: block;
-}
-
-.form-email-checkout:focus {
-color: #fff;
-background-color: transparent;
-border: 1px solid #1ABC9C;
-}
-
-.form-phone-number {
-    width: 700px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #1ABC9C;
-    margin-left: 12rem;
-    margin-top: 1rem;
-}
-
-.form-phone-number:focus {
-color: #fff;
-background-color: transparent;
-border: 1px solid #1ABC9C;
-}
-
-.form-phone-number-checkout {
-    width: 1050px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #1ABC9C;
-    margin-left: 3.5rem;
-    margin-top: 1rem;
-    display: block;
-}
-
-.form-phone-number-checkout:focus {
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #1ABC9C;
-}
 
 .form-address {
-    width: 700px;
-    height: 50px;
+    width: 95%;
     border-radius: 5px;
     background-color: transparent;
     color: #fff;
     border: 1px solid #1ABC9C;
-    margin-left: 15.8rem;
-    margin-top: 1rem;
 }
 
 .form-address:focus {
@@ -973,7 +865,6 @@ border: 1px solid #1ABC9C;
     border-radius: 5px;
     background-color: #1ABC9C;
     border: 1px solid #1ABC9C;
-    margin-left: 24.5rem;
 }
 
 .btn-submit:hover {
@@ -986,12 +877,27 @@ border: 1px solid #1ABC9C;
     height: auto;
     border-radius: 5px;
     background-color: transparent;
-    border: 1px solid #1ABC9C;
-    margin-left: 1rem;
+    border: none;
+    margin-left: 29rem;
     color: #fff;
 }
 
 .btn-cancel:hover {
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+
+
+.btn-cancel-membership{
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+    color: #1ABC9C;
+}
+
+.btn-cancel-membership:hover {
     background-color: transparent;
     border: 1px solid #1ABC9C;
 }
@@ -1027,7 +933,7 @@ border: 1px solid #1ABC9C;
 
 .btn-delete-account {
     border-radius: 20px;
-    width: 1210px;
+    width: 100%;
     margin-left: 1rem;
     background-color: transparent;
     border: 3px solid #1ABC9C;
@@ -1048,13 +954,12 @@ footer{
 }
 
 .footer-title {
-    /* margin-left: 48rem; */
     padding-top: 1rem;
     font-size: 16px;
     font-weight: 600;
 }
 
-.col-md-5{
+.col-md-20{
     flex: 0 0 auto;
     width: 20%;
 }
@@ -1169,10 +1074,142 @@ footer{
     margin-left: 34rem;
 }
 
+/* overview-account : membership */
+.membership{
+    color: #FFF;
+}
+.membership .membership-title{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #1ABC9C;
+    margin-bottom: 1rem;
+}
+.membership .box{
+    height: auto;
+    border-radius: 20px;
+    background-color: #142A36;
+    padding: 2rem;
+}
+.membership .payment-info{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+.membership .payment-dana{
+    max-width: 40px;
+    margin-right: 5px;
+}
+.membership .btn-cancel-membership{
+    width: 100%;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+    color: #1ABC9C;
+    margin: 1rem 0 4rem;
+}
+
+.membership .card{
+    border: 1px solid #1abc9c;
+    height: max-content;
+    border-radius: 5px;
+}
+.membership .card-header{
+    background: #132029;
+    color: #fff;
+    border-bottom: 1px solid #1ABC9C;
+}
+.membership .card-header.active{
+    background: #1abc9c;
+    color: #132029;
+}
+.membership .card-body{
+    background: #132029;
+    color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.membership h5{
+    font-size: 16px;
+}
+.membership h5.text-green{
+    color: #1ABC9C;
+}
+.f-input{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+.f-input input:focus + label {
+    color: #1ABC9C!important;
+}
+.f-input label {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+}
+.f-input input {
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #1ABC9C;
+}
+.f-input input:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #1ABC9C;
+}
+.membership .box-table{
+    height: auto;
+    border-radius: 10px;
+    background-color: #132029;
+    padding: 1rem;
+}
+.membership table tr.border-bottom{
+    border-bottom: 1px solid #FFF;
+}
+.membership table tr td{
+    padding: 10px 0;
+}
+.membership table tr td:last-child{
+    text-align: right;
+}
+.membership .btn-continue-membership{
+    border-radius: 5px;
+    background-color: #1ABC9C;
+    border: 1px solid #1ABC9C;
+    padding: 0.5rem 2rem;
+    color: #142A36;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.membership .aggrement{
+    color: #1ABC9C;
+}
+.membership .img-logo-success{
+    width: 150px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.membership .icon-check{
+    font-size: 200px;
+    color: #1ABC9C;
+    margin-bottom: 1rem;
+}
+.membership .btn-mulai-nonton{
+    border-radius: 5px;
+    background-color: #1ABC9C;
+    border: 1px solid #1ABC9C;
+    padding: 0.5rem 3rem;
+    color: #142A36;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+
 @media (max-width: 767px) {
     .search-box {
         width: 100%;
-        /* margin-left: -100px; */
     }
 
     .nav-icon .dropdown-menu.show{
@@ -1258,14 +1295,6 @@ footer{
         margin-top: 8rem;
     }
 
-    .container-movie {
-        background-color: #142A36;
-        border-radius: 20px;
-        width: 330px;
-        height: auto;
-        margin-left: 1.5rem;
-    }
-
     .thumbnail-movie {
         width: 100px;
         height: auto;
@@ -1311,9 +1340,7 @@ footer{
         font-weight: 100;
         font-size: 14px;
         color: #fff;
-        /* width: 450px; */
         height: 105px;
-        /* margin-left: -150px; */
         margin-top: 2rem;
     }
 
@@ -1322,7 +1349,6 @@ footer{
         font-weight: 600;
         font-size: 14px;
         color: #fff;
-        /* margin-left: 1rem; */
         text-align: left;
         padding: 10px 1px;
     }
@@ -1331,24 +1357,23 @@ footer{
         font-family: "Montserrat", sans-serif;
         color: #fff;
         font-weight: 200;
-        font-size: 18px;
-        /* margin-left: 20.5rem; */
+        font-size: 16px;
         text-align: right;
     }
 
     .director-movie {
         color: #fff;
         font-family: "Montserrat", sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
-        /* margin-left: 1rem; */
         margin-top: 2rem;
         display: inline-block;
-      }
-    
-      .director-movie-name {
+        padding: 0 20px;
+    }
+
+    .director-movie-name {
         font-family: "Montserrat", sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         display: inline-block;
         color: #1ABC9C;
         margin-left: 2rem;
@@ -1357,23 +1382,23 @@ footer{
     .writters-movie {
         color: #fff;
         font-family: "Montserrat", sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
-        /* margin-left: 2rem; */
+        padding: 0 20px;
     }
     
-    .writters-movie-name{
+    .writters-movie-name {
         color: #1ABC9C;
         font-family: "Montserrat", sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 2.2rem;
     }
     
     .star-movie-name{
         color: #1ABC9C;
         font-family: "Montserrat", sans-serif;
-        font-size: 16px;
-        margin-left: 4.2rem;
+        font-size: 14px;
+        margin-left: 3.7rem;
     }
 
     .ratio {
@@ -1422,7 +1447,7 @@ footer{
         font-family: "Montserrat", sans-serif;
         color: #1ABC9C;
         margin-left: 3rem;
-        margin-top: 10px;
+        margin-top: 1rem;
     }
 
     .overview-subtitle {
@@ -1490,51 +1515,14 @@ footer{
     }
 
     .form-full-name {
-        width: 300px;
-        height: auto;
-        border-radius: 5px;
-        background-color: transparent;
-        color: #fff;
-        border: 1px solid #1ABC9C;
-        margin-left: 1rem;
         margin-top: 1rem;
         display: block;
+        margin-left: 1rem;
     }
 
-    .form-email {
-        width: 300px;
-        height: auto;
-        border-radius: 5px;
-        background-color: transparent;
-        color: #fff;
-        border: 1px solid #1ABC9C;
-        margin-left: 1rem;
-        margin-top: 1rem;
-        display: block;
-    }
-
-    .form-phone-number {
-        width: 300px;
-        height: auto;
-        border-radius: 5px;
-        background-color: transparent;
-        color: #fff;
-        border: 1px solid #1ABC9C;
-        margin-left: 1rem;
-        margin-top: 1rem;
-        display: block;
-    }
 
     .form-address {
-        width: 300px;
-        height: auto;
-        border-radius: 5px;
-        background-color: transparent;
-        color: #fff;
-        border: 1px solid #1ABC9C;
-        margin-left: 1rem;
         margin-top: 1rem;
-        display: block;
     }
 
     .btn-submit {
@@ -1546,7 +1534,21 @@ footer{
         margin-left: 1rem;
     }
 
-    
+    .btn-delete-account {
+        width: 90%;
+    }
+
+    .btn-cancel{
+        margin-left: 1rem;
+    }
+
+    .star-ratings {
+        font-size: 16px;
+    }
+
+    .per {
+        font-size: 14px;
+    }
 }
 
 

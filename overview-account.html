@@ -121,246 +121,321 @@
         </div>
       </div>
     </nav>
-    <div class="container-info">
-        <div class="row">
-            <div class="col-md-6 sidebar-left">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a class="group-profile" href="#overview" onclick="showSection('overview')"><i class="fa-solid fa-circle-user"></i> Overview</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="group-profile" href="#membership" onclick="showSection('membership')"><i class="fa-solid fa-address-card"></i> Membership</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="group-profile" href="#security" onclick="showSection('security')"> <i class="fa-solid fa-user-shield"></i> Security</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-6 mt-4">
-                <section id="overview" class="content-section">
-                    <h5 class="overview-title">Overview</h5>
-                    <span class="overview-subtitle">Membership</span>
-                    <div class="rectangle-overview mt-2">
-                      <div class="row">
-                        <div class="col">
-                          <h2 class="overview-plan">Basic Plan</h2>
-                          <h6 class="overview-payment-date">Next Payment : 16 Juli 2024</h6>
-                        </div>
-                        <div class="col">
-                          <img class="e-payment-vendor" src="assets/img/Dana.png" alt="">
-                        </div>
-                        <div class="col e-payment-number">
-                          <span class="payment-number">62-813••••9541</span>
-                        </div>
-                      </div>
-                      <hr class="line-overview">
-                      <a class="btn-manage-membership" href="#" id="manage-membership"><p class="manage-membership mb-4">Manage Membership</p></a>
-                    </div>
-                    <h6 class="contact-info">Contact Info</h6>
-                    <div class="rectangle-overview mb-4">
-                      <form action="">
-                        <div class="row">
-                          <div class="col mb-4">
-                            <span class="label-full-name">Full Name</span>
-                            <input class="form-full-name" type="text" name="" id="">
-                          </div>
 
-                          <div class="col mb-4">
-                            <span class="label-full-name">Email</span>
-                            <input class="form-email" type="text" name="" id="">
-                          </div>
-
-                          <div class="col mb-4">
-                            <span class="label-full-name">Phone Number</span>
-                            <input class="form-phone-number" type="text" name="" id="">
-                          </div>
-
-                          <div class="col mb-4">
-                            <span class="label-full-name">Address</span>
-                            <textarea class="form-address" name="" id=""></textarea>
-                          </div>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-submit mb-4">Save</button>
-                        <button type="button" class="btn btn-primary btn-cancel mb-4">Cancel</button>
-                      </form>
-                    </div>
-                </section>
-        
-                <section id="membership" class="content-section">
-                  <h5 class="overview-title">Membership</h5>
-                  <span class="overview-subtitle">Plan Detail</span>
-                  <div class="rectangle-overview mt-2">
-                    <div class="row">
-                      <div class="col">
-                        <h2 class="overview-plan">Basic Plan</h2>
-                        <h6 class="overview-plan-description">720p video resolution, ad-free watching and more.</h6>
-                      </div>
-                    </div>
-                    <hr class="line-overview">
-                    <a class="btn-manage-membership" href="#" id="change-plan"><p class="manage-plan mb-4">Change Plan</p></a>
-                  </div>
-                  <div id="plan-changed" class="planning-member">
-                    <span class="overview-subtitle">Plan Detail</span>
-                    <div class="rectangle-plan-membership">
-                      <div class="row cards-plan-list">
-                        <div class="col-md-3 col-2">
-                          <div class="card-plan mb-4 mt-4">
-                            <a href="#" class="btn btn-primary btn-plan">Basic Plan <br> <span class="plan-detail-days">Rp. 65.000 / 30 hari</span></a>
-                            <div class="card-body">
-                              <span class="resolution-title">Resolution</span>
-                              <span class="resolution">720p (HD)</span>
-                              <hr class="line-plan-card">
-                              <span class="resolution-title">Support Device</span>
-                              <span class="resolution">Mobile, Computer, TV</span>
-                              <hr class="line-plan-card">
-                              <p class="resolution-title">Devices your <br> household can watch <br> at the same time</p>
-                              <spa class="resolution mb-4">1 Device</spa>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 col-2">
-                          <div class="card-plan mb-4 mt-4" id="standard-plan-card">
-                            <a href="#" class="btn btn-primary btn-plan">Standard Plan <br> <span class="plan-detail-days">Rp. 120.000 / 30 hari</span>
-                              <div class="card-body">
-                                <span class="resolution-title">Resolution</span>
-                                <span class="resolution">1080p (FHD)</span>
-                                <hr class="line-plan-card">
-                                <span class="resolution-title">Support Device</span>
-                                <span class="resolution">Mobile, Computer, TV</span>
-                                <hr class="line-plan-card">
-                                <p class="resolution-title">Devices your <br> household can watch <br> at the same time</p>
-                                <spa class="resolution mb-4">2 Device</spa>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-md-3 col-2">
-                          <div class="card-plan mb-4 mt-4">
-                            <a href="#" class="btn btn-primary btn-plan">Premium <br> <span class="plan-detail-days">Rp. 160.000 / 30 hari</span></a>
-                            <div class="card-body">
-                              <span class="resolution-title">Resolution</span>
-                              <span class="resolution">4K (UHD + HDR)</span>
-                              <hr class="line-plan-card">
-                              <span class="resolution-title">Support Device</span>
-                              <span class="resolution">Mobile, Computer, TV</span>
-                              <hr class="line-plan-card">
-                              <p class="resolution-title">Devices your <br> household can watch <br> at the same time</p>
-                              <spa class="resolution mb-4">6 Device</spa>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    <span class="overview-subtitle">Payment Info</span>
-                    <div class="rectangle-overview mt-2">
-                      <div class="row">
-                        <div class="col">
-                          <h6 class="overview-payment-date mt-4">Next Payment : 16 Juli 2024</h6>
-                        </div>
-                        <div class="col">
-                          <img class="e-payment-vendor" src="assets/img/Dana.png" alt="">
-                        </div>
-                        <div class="col e-payment-number">
-                          <span class="payment-number">62-813••••9541</span>
-                        </div>
-                      </div>
-                      <hr class="line-overview">
-                      <div class="row">
-                        <div class="col">
-                          <h6 class="overview-payment-date mt-4">Manage Payment Method</h6>
-                        </div>
-                        <div class="col arrow-payment">
-                          <a class="btn-manage-membership" href="#" id="manage-membership"><i class="fa-solid fa-arrow-right arrow"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <h6 class="contact-info">Halaman Checkout</h6>
-
-                    <div class="rectangle-overview mb-4">
-                      <form action="">
-                        <div class="row">
-                          <div class="col">
-                            <br>
-                            <span class="label-full-name-checkout">Nama</span>
-                            <input class="form-full-name-checkout" type="text" name="" id="" placeholder="Masukkan Disini">
-                          </div>
-
-                          <div class="col mb-4">
-                            <br>
-                            <span class="label-full-name-checkout">Email</span>
-                            <input class="form-email-checkout" type="text" name="" id="" placeholder="Masukkan Disini">
-                          </div>
-
-                          <div class="col mb-4">
-                            <span class="label-full-name-checkout">No Whatsapp</span>
-                            <input class="form-phone-number-checkout" type="text" name="" id="" placeholder="Masukkan Disini">
-                          </div>
-
-                          <div class="col mb-4">
-                            <div class="rectangle-payment-details text-light">
-                              <div class="d-flex justify-content-between align-items-center mb-2 membership-selected-package">
-                                <span>Basic Plan 30 Hari</span>
-                                <span>Rp. 65.000</span>
-                              </div>
-                              <h5 class="membership-selected-package mb-3">Voucher</h5>
-                              <hr class="bg-secondary">
-                              <div class="membership-selected-package d-flex justify-content-between align-items-center mb-2">
-                                  <span>Subtotal</span>
-                                  <span>Rp.65.000</span>
-                              </div>
-                              <div class=" membership-selected-package d-flex justify-content-between align-items-center mb-2">
-                                  <span>Ppn 10%</span>
-                                  <span>Rp.6.500</span>
-                              </div>
-                              <hr class="bg-secondary">
-                              <div class="membership-selected-package d-flex justify-content-between align-items-center mb-3">
-                                  <span>Total Payment</span>
-                                  <span>Rp.71.500</span>
-                              </div>
-                              <div class="form-check mb-4 d-flex">
-                                  <input class="form-check-input" type="checkbox" id="terms">
-                                  <label class="form-check-label" for="terms">
-                                      By continuing the payment, you agree to <br> our <a href="#" class="text-term">Terms and Conditions</a> and <a href="#" class="text-term">Privacy Policy</a>.
-                                  </label>
-                                  <button class="btn btn-continue mb-4">Continue</button>
-                              </div>
-                            </div>
-                          </div>
-                      </form>
-                    </div>
-                </section>
-                
-        
-                <section id="security" class="content-section">
-                  <h5 class="overview-title">Security</h5>
-                  <span class="overview-subtitle">Change Password</span>
-                  <div class="rectangle-overview mb-4">
-                    <form action="">
-                      <div class="row">
-                        <div class="col mb-4">
-                          <span class="label-full-name">Old Password</span>
-                          <input class="form-full-name" type="password" name="" id="">
-                        </div>
-
-                        <div class="col mb-4">
-                          <span class="label-full-name">New Password</span>
-                          <input class="form-new-password" type="password" name="" id="">
-                        </div>
-
-                        <div class="col mb-4">
-                          <span class="label-full-name">Confirm New Password</span>
-                          <input class="form-confirm-password" type="password" name="" id="">
-                        </div>
-                      </div>
-                      <button type="button" class="btn btn-primary btn-cancel-password mb-4">Cancel</button>
-                      <button type="button" class="btn btn-primary btn-submit-password mb-4">Save</button>
-                    </form>
-                  </div>
-                  <button type="button" class="btn btn-primary btn-delete-account mb-4">Delete Account</button>
-                </section>
-            </div>
+    <div class="container" style="margin-top: 100px; margin-bottom: 100px;">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Content -->
+          <ul class="list-group">
+            <li class="list-group-item">
+                <a class="group-profile" href="#overview" onclick="showSection('overview')"><i class="fa-solid fa-circle-user"></i> Overview</a>
+            </li>
+            <li class="list-group-item">
+                <a class="group-profile" href="#membership" onclick="showSection('membership')"><i class="fa-solid fa-address-card"></i> Membership</a>
+            </li>
+            <li class="list-group-item">
+                <a class="group-profile" href="#security" onclick="showSection('security')"> <i class="fa-solid fa-user-shield"></i> Security</a>
+            </li>
+        </ul>
         </div>
+        <div class="col-md-9">
+          <!-- Content -->
+          <section class="d-block">
+            <div class="content-section overview" id="overview">
+              <h5 class="overview-title">Overview</h5>
+              <span class="overview-subtitle">Membership</span>
+              <div class="rectangle-overview mt-2 px-4">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-md-8">
+                    <h2 class="overview-plan">Basic Plan</h2>
+                    <h6 class="overview-payment-date">Next Payment : 16 Juli 2024</h6>
+                  </div>
+                  <div class="col-md-4 text-md-end">
+                    <img class="e-payment-vendor" src="assets/img/Dana.png" alt="">
+                    <span class="payment-number">62-813••••9541</span>
+                  </div>
+                </div>
+                <hr class="line-overview">
+                <a class="btn-manage-membership text-md-end" href="#" id="manage-membership"><p class="manage-membership mb-4">Manage Membership</p></a>
+              </div>
+              <h6 class="contact-info">Contact Info</h6>
+              <div class="rectangle-overview py-3 mb-4">
+                <form action="">
+                  <div class="row justify-content-center align-items-center mb-4">
+                    <div class="col-md-3">
+                      <span class="label-full-name">Full Name</span>  
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-full-name" type="text" name="" id="">
+                    </div>
+                  </div>
+                  <div class="row justify-content-center align-items-center mb-4">
+                    <div class="col-md-3">
+                      <span class="label-full-name">Email</span>  
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-full-name" type="email" name="" id="">
+                    </div>
+                  </div>
+                  <div class="row justify-content-center align-items-center mb-4">
+                    <div class="col-md-3">
+                      <span class="label-full-name">Phone Number</span>  
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-full-name" type="email" name="" id="">
+                    </div>
+                  </div>
+                  <div class="row justify-content-center align-items-center mb-4">
+                    <div class="col-md-3">
+                      <span class="label-full-name">Address</span>  
+                    </div>
+                    <div class="col-md-9">
+                      <textarea class="form-address" name="" id=""></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                    </div>
+                      <div class="col-md-9">
+                        <button type="button" class="btn btn-primary btn-submit mb-4">Save</button>
+                        <button type="button" class="btn btn-primary btn-cancel-membership mb-4">Cancel</button>
+                      </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- tab Membership -->
+            <div class="content-section membership" id="membership">
+              <h5 class="membership-title">Membership</h5>
+              Plan Detail
+              <div class="box p-3 mt-2 mb-4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2 class="overview-plan">Basic Plan</h2>
+                    <h6 class="overview-payment-date w-auto">720p video resolution, ad-free watching and more</h6>
+                  </div>
+                </div>
+                <hr class="line-overview">
+                <a class="btn-manage-membership text-md-end" href="#" id="manage-membership"><p class="manage-membership">Change Plan</p></a>
+              </div>
+
+              <h5>Payment Info</h5>
+              <div class="box payment-info">
+                <div class="row align-items-center">
+                  <div class="col-md-8 mb-2">
+                    Nex Payment: 16 Juli 2024
+                  </div>
+                  <div class="col-md-4 text-md-end mb-2">
+                    <img class="payment-dana" src="assets/img/Dana.png" alt="">
+                    <span class="payment-number">62-813••••9541</span>
+                  </div>
+                </div>
+                <hr>
+                <div class="row align-items-center mt-4">
+                  <div class="col-md-8 col-6">
+                    Manage Payment Method
+                  </div>
+                  <div class="col-md-4 col-6 text-end">
+                    <i class="fa fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-cancel-membership">Cancel Membership</button>
+
+              <h5>Plan Detail</h5>
+              <div class="box mb-5">
+                <div class="row">
+                  <div class="col-md-4 col-6">
+                    <div class="card">
+                      <div class="card-header active">
+                        <h4>Basic Plan</h4>
+                        Rp.65.000 / 30hari
+                      </div>
+                      <div class="card-body">
+                        <h5>Resolution</h5>
+                        <h5 class="text-green">720p (HD)</h5>
+                        <hr>
+                        <h5>Support Device</h5>
+                        <h5 class="text-green">Mobile, Computer, TV</h5>
+                        <hr>
+                        <h5>Device your household can watchat the same time</h5>
+                        <h5 class="text-green">1 Device</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6">
+                    <div class="card">
+                      <div class="card-header">
+                        <h4>Standard Plan</h4>
+                        Rp.120.000 / 30hari
+                      </div>
+                      <div class="card-body">
+                        <h5>Resolution</h5>
+                        <h5 class="text-green">1080 (FHD)</h5>
+                        <hr>
+                        <h5>Support Device</h5>
+                        <h5 class="text-green">Mobile, Computer, TV</h5>
+                        <hr>
+                        <h5>Device your household can watchat the same time</h5>
+                        <h5 class="text-green">2 Device</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6">
+                    <div class="card">
+                      <div class="card-header">
+                        <h4>Premium</h4>
+                        Rp.160.000 / 30hari
+                      </div>
+                      <div class="card-body">
+                        <h5>Resolution</h5>
+                        <h5 class="text-green">4k (UHD + HDR)</h5>
+                        <hr>
+                        <h5>Support Device</h5>
+                        <h5 class="text-green">Mobile, Computer, TV</h5>
+                        <hr>
+                        <h5>Device your household can watchat the same time</h5>
+                        <h5 class="text-green">6 Device</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- tab Membership : Checkout -->
+              <div class="box mb-3">
+                <div class="form-checkout">
+                  Halaman Checkout
+
+                  <div class="card mt-2 mb-5">
+                    <div class="card-header active w-auto">
+                      <h4>Basic Plan</h4>
+                      <b>Rp.65.000 / 30hari</b>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <div class="mb-3 f-input">
+                      <input type="text" class="form-control form-nama" id="InputNama" aria-describedby="inputNama" placeholder="Masukan Disini">
+                      <label for="InputNama" class="form-label form-label-nama">Nama</label>
+                    </div>
+
+                    <div class="mb-3 f-input">
+                      <input type="email" class="form-control form-email" id="InputEmail" aria-describedby="inputEmail" placeholder="Masukan Disini">
+                      <label for="InputEmail" class="form-label form-label-email">Email</label>
+                    </div>
+
+                    <div class="mb-5 f-input">
+                      <input type="text" class="form-control form-nowhatsapps" id="InputNowhatsapps" aria-describedby="inputNowhatsapps" placeholder="Masukan Disini">
+                      <label for="InputNowhatsapps" class="form-label form-label-nama">No Whatsapps</label>
+                    </div>
+
+                    Payment Detail
+                    <div class="box-table mt-2">
+                      <table class="w-100">
+                        <tr>
+                          <td>Basic Plan 30 Hari</td>
+                          <td>Rp.65000</td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <td>Voucher</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Subtotal</td>
+                          <td>65.000</td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <td>Ppn 10%</td>
+                          <td>Rp.6.500</td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <td>Total payment</td>
+                          <td>Rp.65.000</td>
+                        </tr>
+                      </table>
+
+                      <div class="row mt-3">
+                        <div class="col-md-5 col-12">
+                          <div class="d-flex align-items-center">
+                            <input type="checkbox" name="aggrement" id="">
+                            <div class="ps-3">
+                              By continuing the payment, you agree to
+                              our <a href="#" class="aggrement">Terms and Conditions</a> and <a href="#" class="aggrement">Privacy Policy</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-7 col-12 text-end">
+                          <button class="btn btn-continue-membership">Continue</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="box">
+                <div class="text-center">
+                  <img src="assets/img/codeflix logo.png" class="img-logo-success" alt="">
+
+                  <h4 class="mb-3">Yay! Selamat Pembayaran Kamu</h5>
+                  <h4 class="mb-3">Telah kami Terima</h5>
+
+                  <i class="fa fa-check icon-check"></i>
+
+                  <h4 class="mb-5">Selamat Menikmati</h5>
+                  <button class="btn btn-mulai-nonton">Mulai Nonton</button>
+                </div>
+              </div>
+
+            </div>
+            <!-- tab Security -->
+            <div class="content-section security" id="security">
+              <h5 class="overview-title">Security</h5>
+              <span class="overview-subtitle">Overview</span>
+              <div class="rectangle-overview py-3 md-mb-4">
+                <form action="">
+                  <div class="row justify-content-center align-items-center mb-4">
+                    <div class="col-md-4">
+                      <span class="label-full-name">Old Password</span>  
+                    </div>
+                    <div class="col-md-8">
+                      <input class="form-full-name" type="password" name="" id="">
+                    </div>
+                  </div>
+                  <div class="row justify-content-center align-items-center mb-4">
+                    <div class="col-md-4">
+                      <span class="label-full-name">New Password</span>  
+                    </div>
+                    <div class="col-md-8">
+                      <input class="form-full-name" type="password" name="" id="">
+                    </div>
+                  </div>
+                  <div class="row justify-content-center align-items-center mb-4">
+                    <div class="col-md-4">
+                      <span class="label-full-name">Confirm New Password</span>  
+                    </div>
+                    <div class="col-md-8">
+                      <input class="form-full-name" type="password" name="" id="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                    </div>
+                      <div class="col-md-9">
+                        <button type="button" class="btn btn-primary btn-cancel mb-4">Cancel</button>
+                        <button type="button" class="btn btn-primary btn-submit mb-4">Save</button>
+                      </div>
+                  </div>
+                </form>
+              </div>
+              <button type="button" class="btn btn-primary btn-delete-account mb-4 mt-4">Delete Account</button>
+            </div>
+
+        </section>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="text-center text-white">
@@ -371,27 +446,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       function showSection(sectionId) {
-          // Sembunyikan semua section
           document.querySelectorAll('.content-section').forEach(function(section) {
               section.style.display = 'none';
           });
-      
-          // Tampilkan section yang dipilih
           document.getElementById(sectionId).style.display = 'block';
-          
-          // Tambahkan class active pada link yang diklik
           document.querySelectorAll('.group-profile').forEach(function(link) {
               link.classList.remove('active');
           });
           document.querySelector('.group-profile[href="#' + sectionId + '"]').classList.add('active');
       }
-      
-      // Tampilkan Overview saat halaman dimuat
       document.addEventListener('DOMContentLoaded', function() {
           showSection('overview');
       });
-
-      // Event listener untuk tautan "Change Plan"
       document.getElementById('manage-membership').addEventListener('click', function(event) {
           event.preventDefault();
           showSection('membership');
@@ -400,8 +466,6 @@
       document.getElementById('change-plan').addEventListener('click', function(event) {
       event.preventDefault();
       showSection('membership');
-      
-      // Menampilkan elemen H1
       document.getElementById('plan-changed').style.display = 'block';
   });
   </script>
