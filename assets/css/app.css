@@ -1207,6 +1207,13 @@ footer{
     margin-bottom: 4rem;
 }
 
+
+.payment-detial-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
 @media (max-width: 767px) {
     .search-box {
         width: 100%;
